@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/custom.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <script src="js/vendor/es6detect.js"></script>
+  <script src="js/vendor/d3.min.js"></script>
+  <script src="js/vendor/moment.min.js"></script>
+  <script src="js/vendor/immutable.min.js"></script>
+</head>
+<body class="chart">
+  <header class="chart__header">
+    <h1>Korny's D3 Sample</h1>
+  </header>
+  <main class="chart__chart" id="chart_parent">
+    <div id="old_browser_warning">
+      Warning: this page needs a really new browser!  If you can see this, it probably won't work (or there's a bug in the code)...
+    </div>
+    <!-- the chart goes here -->
+  </main>
+  <aside class="chart__controls"><!-- chart controls --></aside>
+  <aside class="chart__inspect"><!-- inspector --></aside>
+  <script src="js/chart.js" type="module"></script>
+</body>
