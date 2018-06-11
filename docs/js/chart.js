@@ -1,8 +1,7 @@
-import {removeWarning} from './utils.js';
-import rawData from './exported-data.js';
+import { removeWarning } from './utils.js';
+import { springRawLog } from './data/spring_log.js';
 
 removeWarning('old_browser_warning');
-
 
 const chartConfig = {
     margins: {
@@ -49,6 +48,24 @@ function secsToDays(secs) {
     return secs / (60.0 * 60 * 24);
 }
 
+function releaseTime(data) {
+    const releaseTag = data.get('tags')
+   .filter(tag => tag.get('tags').some(tagName => /.*RELEASE/.test(tagName)))
+   .first();
+    if (releaseTag) {
+        return moment(releaseTag.get('timestamp', moment.ISO_8601)).unix();
+    }
+    return null;
+}
+
+function releaseDelay(data) {
+    const rt = releaseTime(data);
+    if (rt) {
+        return rt - data.get('date');
+    }
+    return null;
+}
+
 function updateChart(config, elements, data) {
     const {
         chartEl,
@@ -61,7 +78,7 @@ function updateChart(config, elements, data) {
 
     const minDate = data.map(d => d.get('date')).min();
     const maxDate = data.map(d => d.get('date')).max();
-    const maxDuration = secsToDays(data.map(d => d.get('release-delay')).max());
+    const maxDuration = secsToDays(data.map(releaseDelay).max());
 
     const yScale = d3.scaleLinear()
         .domain([0, maxDuration])
@@ -95,14 +112,14 @@ function updateChart(config, elements, data) {
 
     commits.merge(newCommits)
         .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
-        .attr('cy', j => yScale(secsToDays(j.get('release-delay'))))
+        .attr('cy', j => yScale(secsToDays(releaseDelay(j))))
         .append('svg:title')
         .text(n => n.get('msg'));
 }
 
 const chartElements = initialiseChartElements('#chart_parent', chartConfig);
 
-const data = postProcessData(rawData);
+const data = postProcessData(springRawLog);
 
 updateChart(chartConfig, chartElements, data);
 
