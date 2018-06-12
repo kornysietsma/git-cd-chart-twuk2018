@@ -66,6 +66,11 @@ function releaseDelay(data) {
     return null;
 }
 
+function sizeToRadius(data) {
+    const size = data.get('diffs').valueSeq().reduce((m, v) => m + v);
+    return size === undefined ? 0 : Math.sqrt(size);
+}
+
 function updateChart(config, elements, data) {
     const {
         chartEl,
@@ -107,12 +112,12 @@ function updateChart(config, elements, data) {
     const newCommits = commits
         .enter()
         .append('circle')
-        .attr('class', 'commit')
-        .attr('r', 6);
+        .attr('class', 'commit');
 
     commits.merge(newCommits)
         .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
         .attr('cy', j => yScale(secsToDays(releaseDelay(j))))
+        .attr('r', sizeToRadius)
         .append('svg:title')
         .text(n => n.get('msg'));
 }
