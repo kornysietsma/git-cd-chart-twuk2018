@@ -1,5 +1,5 @@
 import { removeWarning } from './utils.js';
-import { springRawLog } from './data/spring_log.js';
+import { verifyFrontendRawLog, verifyReleaseTagMatcher } from './data/verify_frontend_log.js';
 
 removeWarning('old_browser_warning');
 
@@ -12,6 +12,7 @@ const chartConfig = {
     },
     outerWidth: 1024,
     outerHeight: 768,
+    releaseTagMatcher: verifyReleaseTagMatcher,
 };
 
 function initialiseChartElements(rootSelector, config) {
@@ -48,9 +49,9 @@ function secsToDays(secs) {
     return secs / (60.0 * 60 * 24);
 }
 
-function releaseTime(data) {
+function releaseTime(releaseTagMatcher, data) {
     const releaseTag = data.get('tags')
-   .filter(tag => tag.get('tags').some(tagName => /.*RELEASE/.test(tagName)))
+   .filter(tag => tag.get('tags').some(tagName => releaseTagMatcher.test(tagName)))
    .first();
     if (releaseTag) {
         return moment(releaseTag.get('timestamp', moment.ISO_8601)).unix();
@@ -58,17 +59,25 @@ function releaseTime(data) {
     return null;
 }
 
-function releaseDelay(data) {
-    const rt = releaseTime(data);
-    if (rt) {
-        return rt - data.get('date');
-    }
-    return null;
+function releaseDelay(releaseTagMatcher) {
+    return (data) => {
+        const rt = releaseTime(releaseTagMatcher, data);
+        if (rt) {
+            return rt - data.get('date');
+        }
+        return null;
+    };
 }
 
 function sizeToRadius(data) {
     const size = data.get('diffs').valueSeq().reduce((m, v) => m + v);
-    return size === undefined ? 0 : Math.sqrt(size);
+    if (size === undefined) {
+        return 0;
+    }
+    if (size <= 4) {
+        return 2;
+    }
+    return Math.sqrt(size);
 }
 
 function updateChart(config, elements, data) {
@@ -83,7 +92,7 @@ function updateChart(config, elements, data) {
 
     const minDate = data.map(d => d.get('date')).min();
     const maxDate = data.map(d => d.get('date')).max();
-    const maxDuration = secsToDays(data.map(releaseDelay).max());
+    const maxDuration = secsToDays(data.map(releaseDelay(config.releaseTagMatcher)).max());
 
     const yScale = d3.scaleLinear()
         .domain([0, maxDuration])
@@ -116,7 +125,7 @@ function updateChart(config, elements, data) {
 
     commits.merge(newCommits)
         .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
-        .attr('cy', j => yScale(secsToDays(releaseDelay(j))))
+        .attr('cy', j => yScale(secsToDays(releaseDelay(config.releaseTagMatcher)(j))))
         .attr('r', sizeToRadius)
         .append('svg:title')
         .text(n => n.get('msg'));
@@ -124,7 +133,7 @@ function updateChart(config, elements, data) {
 
 const chartElements = initialiseChartElements('#chart_parent', chartConfig);
 
-const data = postProcessData(springRawLog);
+const data = postProcessData(verifyFrontendRawLog);
 
 updateChart(chartConfig, chartElements, data);
 
