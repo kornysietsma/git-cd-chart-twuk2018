@@ -80,7 +80,7 @@ function sizeToRadius(data) {
     return Math.sqrt(size);
 }
 
-function updateChart(config, elements, data) {
+function updateChart(config, elements, data, authorData) {
     const {
         chartEl,
         xAxisGroup,
@@ -127,14 +127,29 @@ function updateChart(config, elements, data) {
         .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
         .attr('cy', j => yScale(secsToDays(releaseDelay(config.releaseTagMatcher)(j))))
         .attr('r', sizeToRadius)
+        .attr('fill', j => {
+            const ad = authorData.get(j.get('author'));
+            return ad.get('colour');
+        })
         .append('svg:title')
         .text(n => n.get('msg'));
+}
+
+function calculateAuthorData(data) {
+    const authorFrequencies = data.countBy(d => d.get('author')).sortBy(v => -v);
+    const authorData = authorFrequencies.mapEntries(([author, frequency], ix) => {
+        const colour = ix < 20 ? d3.schemeCategory20[ix] : d3.schemeCategory20[19];
+        return [author, Immutable.Map({ frequency, colour })];
+    });
+    return authorData;
 }
 
 const chartElements = initialiseChartElements('#chart_parent', chartConfig);
 
 const data = postProcessData(verifyFrontendRawLog);
 
-updateChart(chartConfig, chartElements, data);
+const authorData = calculateAuthorData(data);
+
+updateChart(chartConfig, chartElements, data, authorData);
 
 // updateChart can be called by event handlers and the like to, y'know, update the chart.
