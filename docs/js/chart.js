@@ -14,8 +14,8 @@ const chartConfig = {
     outerHeight: 768,
     releaseTagMatcher: verifyReleaseTagMatcher,
     commitPrefix: verifyCommitPrefix,
-    durationSplitAt: 0.9, // proportion of the chart
-    durationSplitQuantile: 0.95, // proportion of the data
+    durationSplitAt: 0.95, // proportion of the chart
+    durationSplitQuantile: 0.99, // proportion of the data
     chartStartDate: null, // populated later
     chartEndDate: null, // populated later
     selectedCommit: null,
@@ -174,30 +174,35 @@ function calculateDurationTicks(config, splitDuration, maxDuration) {
     // we want a step that divides this roughly in 10
     const step = Math.max(Math.floor(maxInUnits / 10), 1);
     const range = Immutable.Range(0, maxInUnits, step);
-    return range.map(m => moment.duration(m, unit).asSeconds()).toArray();
+    return range.map(m => moment.duration(m, unit).asSeconds()).toList().push(maxDuration).toArray();
 }
 
-function secondsFormatter(secs) {
-    if (secs < 1) {
-        return '0';
-    }
-    const duration = moment.duration(secs, 'seconds');
-    if (duration.asMinutes() < 180) {
-        return `${duration.asMinutes()} m`;
-    }
-    if (duration.asHours() < 72) {
-        return `${duration.asHours()} h`;
-    }
-    if (duration.asDays() < 7) {
-        // format as days and hours
-        const h = duration.hours(); // not "asHours" - this should return 0 to 23
-        const d = Math.floor(duration.asDays());
-        if (h === 0) {
-            return `${d} d`;
+function secondsFormatter(maxDuration) {
+    return (secs) => {
+        if (secs < 1) {
+            return '0';
         }
-        return `${d} d ${h} h`;
-    }
-    return `${Math.floor(duration.asDays())} d`;
+        if (secs >= maxDuration) {
+            return 'outliers';
+        }
+        const duration = moment.duration(secs, 'seconds');
+        if (duration.asMinutes() < 180) {
+            return `${duration.asMinutes()} m`;
+        }
+        if (duration.asHours() < 72) {
+            return `${duration.asHours()} h`;
+        }
+        if (duration.asDays() < 7) {
+            // format as days and hours
+            const h = duration.hours(); // not "asHours" - this should return 0 to 23
+            const d = Math.floor(duration.asDays());
+            if (h === 0) {
+                return `${d} d`;
+            }
+            return `${d} d ${h} h`;
+        }
+        return `${Math.floor(duration.asDays())} d`;
+    };
 }
 
 function sanitise(str) {
@@ -233,13 +238,13 @@ function commitAsHtml(config, commit) {
 
 function unSelectCommit(el, inspectorEl) {
     if (el) {
-        d3.select(el).style('stroke', '#ffffff').style('stroke-width', '0');
+        d3.select(el).style('stroke', '#fff400').style('stroke-width', '0');
     }
     inspectorEl.innerHTML = '<p>Nothing selected</p>';
 }
 
 function selectCommit(el, inspectorEl, commit, config) {
-    d3.select(el).style('stroke', '#ffffff').style('stroke-width', '2');
+    d3.select(el).style('stroke', '#fff400').style('stroke-width', '2');
     inspectorEl.innerHTML = commitAsHtml(config, commit);
 }
 
@@ -284,7 +289,7 @@ function updateChart(config, elements, data) {
     const yAxis = d3.axisLeft()
         .scale(yScale)
         .tickValues(calculateDurationTicks(config, splitDuration, maxDuration))
-        .tickFormat(secondsFormatter);
+        .tickFormat(secondsFormatter(maxDuration));
 
     yAxisGroup.call(yAxis);
 
@@ -326,6 +331,10 @@ function updateChart(config, elements, data) {
         .on('click', selectCommitCallback)
         .append('svg:title')
         .text(n => n.get('msg'));
+
+    commits
+        .exit()
+        .remove();
 }
 
 const data = postProcessData(verifyFrontendRawLog, chartConfig);
