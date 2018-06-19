@@ -1,5 +1,5 @@
-import { removeWarning } from './utils.js';
-import { verifyFrontendRawLog, verifyReleaseTagMatcher } from './data/verify_frontend_log.js';
+import {removeWarning} from './utils.js';
+import {verifyFrontendRawLog, verifyReleaseTagMatcher} from './data/verify_frontend_log.js';
 
 removeWarning('old_browser_warning');
 
@@ -8,11 +8,13 @@ const chartConfig = {
         top: 20,
         right: 20,
         bottom: 30,
-        left: 40,
+        left: 60,
     },
     outerWidth: 1024,
     outerHeight: 768,
     releaseTagMatcher: verifyReleaseTagMatcher,
+    durationSplitAt: 0.9, // proportion of the chart
+    durationSplitQuantile: 0.9, // proportion of the data
 };
 
 function initialiseChartElements(rootSelector, config) {
@@ -38,35 +40,51 @@ function initialiseChartElements(rootSelector, config) {
     };
 }
 
-function postProcessData(data) {
-    // for this sample, just convert dates to unix epoch seconds and make datastructures immutable
-    return Immutable.fromJS(data)
-        .map(d => d.set('date', moment(d.get('commit-time'), moment.ISO_8601).unix()))
-        .sortBy(d => d.get('date'));
+function calculateAuthorData(data) {
+    const authorFrequencies = data.countBy(d => d.get('author')).sortBy(v => -v);
+    const authorData = authorFrequencies.mapEntries(([author, frequency], ix) => {
+        const colour = ix < 20 ? d3.schemeCategory20[ix] : d3.schemeCategory20[19];
+        return [author, Immutable.Map({ frequency, colour })];
+    });
+    return authorData;
 }
 
-function secsToDays(secs) {
-    return secs / (60.0 * 60 * 24);
-}
-
-function releaseTime(releaseTagMatcher, data) {
+function releaseDateFromTags(releaseTagMatcher, data) {
     const releaseTag = data.get('tags')
-   .filter(tag => tag.get('tags').some(tagName => releaseTagMatcher.test(tagName)))
-   .first();
+        .filter(tag => tag.get('tags').some(tagName => releaseTagMatcher.test(tagName)))
+        .first();
     if (releaseTag) {
         return moment(releaseTag.get('timestamp', moment.ISO_8601)).unix();
     }
     return null;
 }
 
+function commitDateInSeconds(commitData) {
+    return moment(commitData.get('commit-time'), moment.ISO_8601).unix();
+}
+
 function releaseDelay(releaseTagMatcher) {
     return (data) => {
-        const rt = releaseTime(releaseTagMatcher, data);
-        if (rt) {
-            return rt - data.get('date');
+        const releaseDate = releaseDateFromTags(releaseTagMatcher, data);
+        if (releaseDate) {
+            const commitDate = data.get('date') || commitDateInSeconds(data);
+            return releaseDate - commitDate;
         }
         return null;
     };
+}
+
+function postProcessData(data, config) {
+    // avoid doing too much here - this is effectively a cache, might not be needed.
+    const sortedCommits = Immutable.fromJS(data)
+        .map(d => d.merge({
+            date: commitDateInSeconds(d),
+            releaseDelay: releaseDelay(config.releaseTagMatcher)(d),
+        }))
+        .sortBy(d => d.get('date'));
+    const authorData = calculateAuthorData(sortedCommits);
+
+    return { sortedCommits, authorData };
 }
 
 function sizeToRadius(data) {
@@ -80,27 +98,79 @@ function sizeToRadius(data) {
     return Math.sqrt(size);
 }
 
-function updateChart(config, elements, data, authorData) {
+function calculateDurationTicks(config, splitDuration, maxDuration) {
+    // we want about 10 ticks - depending on the range, these could be
+    // minutes, hours, days, weeks, or multiple weeks
+    // Assume for now the scale ends at the split - above this is "special" data
+
+    const max = moment.duration(splitDuration, 'seconds');
+    let unit;
+    if (max < moment.duration(6, 'hours')) {
+        unit = 'minutes';
+    } else if (max < moment.duration(6, 'days')) {
+        unit = 'hours';
+    } else if (max < moment.duration(6, 'weeks')) {
+        unit = 'days';
+    } else {
+        unit = 'weeks';
+    }
+
+    const maxInUnits = max.as(unit);
+    // we want a step that divides this roughly in 10
+    const step = Math.max(Math.floor(maxInUnits / 10), 1);
+    const range = Immutable.Range(0, maxInUnits, step);
+    return range.map(m => moment.duration(m, unit).asSeconds()).toArray();
+}
+
+function secondsFormatter(secs) {
+    if (secs < 1) {
+        return '0';
+    }
+    const duration = moment.duration(secs, 'seconds');
+    if (duration.asDays() > 27) { // moment.js humanize is bad at months
+        return `${duration.asDays()} days`;
+    }
+    return duration.humanize();
+}
+
+function updateChart(config, elements, data) {
     const {
         chartEl,
         xAxisGroup,
         yAxisGroup,
     } = elements;
+    const {
+        sortedCommits,
+        authorData,
+    } = data;
 
     const width = config.outerWidth - config.margins.left - config.margins.right;
     const height = config.outerHeight - config.margins.top - config.margins.bottom;
 
-    const minDate = data.map(d => d.get('date')).min();
-    const maxDate = data.map(d => d.get('date')).max();
-    const maxDuration = secsToDays(data.map(releaseDelay(config.releaseTagMatcher)).max());
+    const minDate = sortedCommits.map(d => d.get('date')).min();
+    const maxDate = sortedCommits.map(d => d.get('date')).max();
 
+    const delays = sortedCommits.map(d => d.get('releaseDelay'))
+        .filter(d => d !== null)
+        .sort()
+        .toArray();
+
+    const maxDuration = d3.max(delays);
+    const splitDuration = d3.quantile(delays, config.durationSplitQuantile);
+
+    const splitDurationScaleSize = height - config.margins.bottom - config.margins.top;
+    const splitDurationScalePixels = splitDurationScaleSize * (1.0 - config.durationSplitAt);
     const yScale = d3.scaleLinear()
-        .domain([0, maxDuration])
-        .range([height - config.margins.bottom, config.margins.top]);
+        .domain([0, splitDuration, maxDuration])
+        .range([
+            height - config.margins.bottom,
+            config.margins.top + splitDurationScalePixels,
+            config.margins.top]);
 
     const yAxis = d3.axisLeft()
         .scale(yScale)
-        .ticks(10, 'd');
+        .tickValues(calculateDurationTicks(config, splitDuration, maxDuration))
+        .tickFormat(secondsFormatter);
 
     yAxisGroup.call(yAxis);
 
@@ -116,7 +186,7 @@ function updateChart(config, elements, data, authorData) {
     xAxisGroup.call(xAxis);
 
     const commits = chartEl.selectAll('.commit')
-        .data(data.toArray(), commit => commit.get('id'));
+        .data(sortedCommits.toArray(), commit => commit.get('id'));
 
     const newCommits = commits
         .enter()
@@ -125,7 +195,7 @@ function updateChart(config, elements, data, authorData) {
 
     commits.merge(newCommits)
         .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
-        .attr('cy', j => yScale(secsToDays(releaseDelay(config.releaseTagMatcher)(j))))
+        .attr('cy', j => yScale(releaseDelay(config.releaseTagMatcher)(j)))
         .attr('r', sizeToRadius)
         .attr('fill', j => {
             const ad = authorData.get(j.get('author'));
@@ -135,21 +205,11 @@ function updateChart(config, elements, data, authorData) {
         .text(n => n.get('msg'));
 }
 
-function calculateAuthorData(data) {
-    const authorFrequencies = data.countBy(d => d.get('author')).sortBy(v => -v);
-    const authorData = authorFrequencies.mapEntries(([author, frequency], ix) => {
-        const colour = ix < 20 ? d3.schemeCategory20[ix] : d3.schemeCategory20[19];
-        return [author, Immutable.Map({ frequency, colour })];
-    });
-    return authorData;
-}
 
 const chartElements = initialiseChartElements('#chart_parent', chartConfig);
 
-const data = postProcessData(verifyFrontendRawLog);
+const data = postProcessData(verifyFrontendRawLog, chartConfig);
 
-const authorData = calculateAuthorData(data);
-
-updateChart(chartConfig, chartElements, data, authorData);
+updateChart(chartConfig, chartElements, data);
 
 // updateChart can be called by event handlers and the like to, y'know, update the chart.
