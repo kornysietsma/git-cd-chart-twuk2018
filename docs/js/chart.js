@@ -110,13 +110,31 @@ function calculateAuthorData(data) {
     return authorData;
 }
 
+function releaseInfoFromGithubRelease(data) {
+    const releases = data.get('tags')
+        .filter(tag => tag.has('releases'))
+        .first();
+    if (releases === undefined || releases.isEmpty()) {
+        return { releaseDate: null, releaseTag: null };
+    }
+    const release = releases.get('releases').first();
+    return {
+        releaseDate: moment(release.get('publishedAt'), moment.ISO_8601).unix(),
+        releaseTag: release.get('tag'),
+    };
+}
+
 function releaseInfoFromTags(releaseTagMatcher, data) {
+    // Hacky thing: if 'releaseTagMatcher' is the string 'github' we use "tags/releases" not "tags/tags".
+    if (releaseTagMatcher === 'github') {
+        return releaseInfoFromGithubRelease(data);
+    }
     const releaseTag = data.get('tags')
         .filter(tag => tag.get('tags').some(tagName => releaseTagMatcher.test(tagName)))
         .first();
     if (releaseTag) {
         return {
-            releaseDate: moment(releaseTag.get('timestamp', moment.ISO_8601)).unix(),
+            releaseDate: moment(releaseTag.get('timestamp'), moment.ISO_8601).unix(),
             releaseTag: releaseTag.get('tags').filter(tagName => releaseTagMatcher.test(tagName)).first(),
         };
     }
@@ -161,6 +179,9 @@ function sizeToRadius(data) {
     }
     if (size <= 4) {
         return 2;
+    }
+    if (size >= 100) {
+        return 10; // TODO: can we highlight where massive commits would make our chart unreadable?
     }
     return Math.sqrt(size);
 }

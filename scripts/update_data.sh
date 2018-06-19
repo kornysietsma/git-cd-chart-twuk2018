@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-declare -a projects=("spring" "verifyFrontend" "verifyHub")
+declare -a projects=("spring" "verifyFrontend" "verifyHub" "kubernetes" "vscode")
 
 (
   echo -n "export const springRawLog = "
@@ -28,6 +28,24 @@ declare -a projects=("spring" "verifyFrontend" "verifyHub")
   echo 'export const verifyHubReleaseTagMatcher = /.*release_\d+/;'
   echo 'export const verifyHubCommitPrefix = "https://github.com/alphagov/verify-hub/commit/";'
 ) > docs/js/data/verifyHub_log.js
+
+(
+  echo -n "export const kubernetesRawLog = "
+  cat raw_samples/kubernetes.json
+  echo ";"
+  echo "export const kubernetesTitle = \"Kubernetes\";"
+  echo 'export const kubernetesReleaseTagMatcher = "github";'
+  echo 'export const kubernetesCommitPrefix = "https://github.com/kubernetes/kubernetes/commit/";'
+) > docs/js/data/kubernetes_log.js
+
+(
+  echo -n "export const vscodeRawLog = "
+  cat raw_samples/vscode.json
+  echo ";"
+  echo "export const vscodeTitle = \"VScode\";"
+  echo 'export const vscodeReleaseTagMatcher = /\d+\.\d+\..*/;'
+  echo 'export const vscodeCommitPrefix = "https://github.com/Microsoft/vscode/commit/";'
+) > docs/js/data/vscode_log.js
 
 echo "// auto-generated from scripts/update_data.sh script" > docs/js/data/all.js
 
