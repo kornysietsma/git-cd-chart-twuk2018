@@ -107583,3 +107583,4 @@ export const verifyFrontendRawLog = [ {
 } ];
 export const verifyFrontendTitle = "Verify Frontend";
 export const verifyReleaseTagMatcher = /.*release_\d+/;
+export const verifyCommitPrefix = "https://github.com/alphagov/verify-frontend/commit/";

@@ -1,5 +1,5 @@
 import {removeWarning} from './utils.js';
-import {verifyFrontendRawLog, verifyReleaseTagMatcher} from './data/verify_frontend_log.js';
+import {verifyFrontendRawLog, verifyReleaseTagMatcher, verifyCommitPrefix} from './data/verify_frontend_log.js';
 
 removeWarning('old_browser_warning');
 
@@ -13,8 +13,13 @@ const chartConfig = {
     outerWidth: 1024,
     outerHeight: 768,
     releaseTagMatcher: verifyReleaseTagMatcher,
+    commitPrefix: verifyCommitPrefix,
     durationSplitAt: 0.9, // proportion of the chart
     durationSplitQuantile: 0.95, // proportion of the data
+    chartStartDate: null, // populated later
+    chartEndDate: null, // populated later
+    selectedCommit: null,
+    selectedCommitEl: null,
 };
 
 function setInitialDates(config, earliestDate, latestDate) {
@@ -48,8 +53,8 @@ function initialiseChartElements(rootSelector, config) {
     const controlsEl = document.getElementById('controls');
     controlsEl.insertAdjacentHTML('beforeend', fromDateHtml);
     controlsEl.insertAdjacentHTML('beforeend', toDateHtml);
-    // const inspectorEl = document.getElementById('inspector');
-
+    const inspectorEl = document.getElementById('inspector');
+    inspectorEl.innerHTML = '<p>Select a commit for more details</p>';
 
     return {
         chartEl,
@@ -57,6 +62,7 @@ function initialiseChartElements(rootSelector, config) {
         yAxisGroup,
         fromDateEl: document.getElementById('fromDate'),
         toDateEl: document.getElementById('toDate'),
+        inspectorEl,
     };
 }
 
@@ -92,14 +98,17 @@ function calculateAuthorData(data) {
     return authorData;
 }
 
-function releaseDateFromTags(releaseTagMatcher, data) {
+function releaseInfoFromTags(releaseTagMatcher, data) {
     const releaseTag = data.get('tags')
         .filter(tag => tag.get('tags').some(tagName => releaseTagMatcher.test(tagName)))
         .first();
     if (releaseTag) {
-        return moment(releaseTag.get('timestamp', moment.ISO_8601)).unix();
+        return {
+            releaseDate: moment(releaseTag.get('timestamp', moment.ISO_8601)).unix(),
+            releaseTag: releaseTag.get('tags').filter(tagName => releaseTagMatcher.test(tagName)).first(),
+        };
     }
-    return null;
+    return { releaseDate: null, releaseTag: null };
 }
 
 function commitDateInSeconds(commitData) {
@@ -108,7 +117,7 @@ function commitDateInSeconds(commitData) {
 
 function releaseDelay(releaseTagMatcher) {
     return (data) => {
-        const releaseDate = releaseDateFromTags(releaseTagMatcher, data);
+        const { releaseDate } = releaseInfoFromTags(releaseTagMatcher, data);
         if (releaseDate) {
             const commitDate = data.get('date') || commitDateInSeconds(data);
             return releaseDate - commitDate;
@@ -191,6 +200,46 @@ function secondsFormatter(secs) {
     return `${Math.floor(duration.asDays())} d`;
 }
 
+function commitAsHtml(config, commit) {
+    const msg = commit.get('msg');
+    const author = commit.get('author');
+    const authorTime = commit.get('author-time');
+    const committer = commit.get('committer');
+    const commitTime = commit.get('commit-time');
+    const sha = commit.get('id');
+    const commitHtml = config.commitPrefix !== null
+        ? `<a href="${config.commitPrefix + sha}" target="_blank">${sha}</a>`
+        : sha;
+    const { releaseDate, releaseTag } = releaseInfoFromTags(config.releaseTagMatcher, commit);
+
+    const tagHtmlInner = commit.get('tags').map(tag => `<li>${tag.get('tags').join(', ')} at ${tag.get('timestamp')}</li>`).join('\n');
+
+    const releaseDelayDuration = releaseDate == null ? null : moment.duration(releaseDate - commit.get('date'), 'seconds');
+    const releaseInfo = releaseDate == null
+        ? '(never released)'
+        : `Released: ${releaseTag} at ${moment.unix(releaseDate).format()}<br/>Release delay of roughly ${releaseDelayDuration.humanize()}`;
+
+    return `<p>Commit: ${commitHtml}<br/>` +
+        `Message: ${msg}<br/>` +
+        `Author: ${author} at ${authorTime}<br/>` +
+        `Committer: ${committer} at ${commitTime}<br/>` +
+        `${releaseInfo}</p>` +
+        `<ul>${tagHtmlInner}</ul>`;
+}
+
+function unSelectCommit(el, inspectorEl) {
+    if (el) {
+        d3.select(el).style('stroke', '#ffffff').style('stroke-width', '0');
+    }
+    inspectorEl.innerHTML = '<p>Nothing selected</p>';
+}
+
+function selectCommit(el, inspectorEl, commit, config) {
+    d3.select(el).style('stroke', '#ffffff').style('stroke-width', '2');
+    inspectorEl.innerHTML = commitAsHtml(config, commit);
+}
+
+
 function updateChart(config, elements, data) {
     const {
         chartEl,
@@ -254,6 +303,14 @@ function updateChart(config, elements, data) {
         .append('circle')
         .attr('class', 'commit');
 
+    const selectCommitCallback = (node, i, nodes) => {
+        if (config.selectedCommitEl) {
+            unSelectCommit(config.selectedCommitEl, elements.inspectorEl);
+        }
+        config.selectedCommitEl = nodes[i];
+        selectCommit(config.selectedCommitEl, elements.inspectorEl, node, config);
+    };
+
     commits.merge(newCommits)
         .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
         .attr('cy', j => yScale(releaseDelay(config.releaseTagMatcher)(j)))
@@ -262,6 +319,7 @@ function updateChart(config, elements, data) {
             const ad = authorData.get(j.get('author'));
             return ad.get('colour');
         })
+        .on('click', selectCommitCallback)
         .append('svg:title')
         .text(n => n.get('msg'));
 }

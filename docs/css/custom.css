@@ -24,6 +24,7 @@ body {
 }
 .chart__inspect {
   background-color: #010e35;
+    font-size: 0.6em;
 }
 
 .chart__footer {
@@ -53,3 +54,4 @@ body {
 fieldset.date-picker {
     font-size: 0.8em;
 }
+
