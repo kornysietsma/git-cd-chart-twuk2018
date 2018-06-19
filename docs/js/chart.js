@@ -14,8 +14,15 @@ const chartConfig = {
     outerHeight: 768,
     releaseTagMatcher: verifyReleaseTagMatcher,
     durationSplitAt: 0.9, // proportion of the chart
-    durationSplitQuantile: 0.9, // proportion of the data
+    durationSplitQuantile: 0.95, // proportion of the data
 };
+
+function setInitialDates(config, earliestDate, latestDate) {
+    const oneYearAgo = moment.unix(latestDate).subtract(1, 'years').unix();
+    const defaultStartDate = Math.max(earliestDate, oneYearAgo);
+    config.chartStartDate = defaultStartDate;
+    config.chartEndDate = latestDate;
+}
 
 function initialiseChartElements(rootSelector, config) {
     const height = config.outerHeight - config.margins.top - config.margins.bottom;
@@ -33,11 +40,47 @@ function initialiseChartElements(rootSelector, config) {
         .attr('class', 'y-axis-group')
         .attr('transform', `translate(${config.margins.left},0)`);
 
+    const earliestDateText = moment.unix(config.chartStartDate).format('YYYY-MM-DD');
+    const fromDateHtml = `<fieldset class="date-picker"><span>From date:</span><input id="fromDate" type="date" value="${earliestDateText}">`;
+    const latestDateText = moment.unix(config.chartEndDate).format('YYYY-MM-DD');
+    const toDateHtml = `<fieldset class="date-picker"><span>To date:</span><input id="toDate" type="date" value="${latestDateText}">`;
+
+    const controlsEl = document.getElementById('controls');
+    controlsEl.insertAdjacentHTML('beforeend', fromDateHtml);
+    controlsEl.insertAdjacentHTML('beforeend', toDateHtml);
+    // const inspectorEl = document.getElementById('inspector');
+
+
     return {
         chartEl,
         xAxisGroup,
         yAxisGroup,
+        fromDateEl: document.getElementById('fromDate'),
+        toDateEl: document.getElementById('toDate'),
     };
+}
+
+function initialiseGlobalEvents(config, chartElements, onChangeFn) {
+    chartElements.fromDateEl.addEventListener('change', () => {
+        const newDate = chartElements.fromDateEl.value;
+        const parsedDate = moment(newDate, 'YYYY-MM-DD');
+        if (parsedDate.isValid() && parsedDate.unix() < config.chartEndDate) {
+            config.chartStartDate = parsedDate.unix();
+            onChangeFn();
+        } else {
+            console.log('invalid start date:', newDate);
+        }
+    });
+    chartElements.toDateEl.addEventListener('change', () => {
+        const newDate = chartElements.toDateEl.value;
+        const parsedDate = moment(newDate, 'YYYY-MM-DD');
+        if (parsedDate.isValid() && parsedDate.unix() > config.chartStartDate) {
+            config.chartEndDate = parsedDate.unix();
+            onChangeFn();
+        } else {
+            console.log('invalid end date:', newDate);
+        }
+    });
 }
 
 function calculateAuthorData(data) {
@@ -84,7 +127,10 @@ function postProcessData(data, config) {
         .sortBy(d => d.get('date'));
     const authorData = calculateAuthorData(sortedCommits);
 
-    return { sortedCommits, authorData };
+    const globalEarliestDate = sortedCommits.first().get('date');
+    const globalLatestDate = sortedCommits.last().get('date');
+
+    return { sortedCommits, authorData, globalEarliestDate, globalLatestDate };
 }
 
 function sizeToRadius(data) {
@@ -127,10 +173,22 @@ function secondsFormatter(secs) {
         return '0';
     }
     const duration = moment.duration(secs, 'seconds');
-    if (duration.asDays() > 27) { // moment.js humanize is bad at months
-        return `${duration.asDays()} days`;
+    if (duration.asMinutes() < 180) {
+        return `${duration.asMinutes()} m`;
     }
-    return duration.humanize();
+    if (duration.asHours() < 72) {
+        return `${duration.asHours()} h`;
+    }
+    if (duration.asDays() < 7) {
+        // format as days and hours
+        const h = duration.hours(); // not "asHours" - this should return 0 to 23
+        const d = Math.floor(duration.asDays());
+        if (h === 0) {
+            return `${d} d`;
+        }
+        return `${d} d ${h} h`;
+    }
+    return `${Math.floor(duration.asDays())} d`;
 }
 
 function updateChart(config, elements, data) {
@@ -147,10 +205,13 @@ function updateChart(config, elements, data) {
     const width = config.outerWidth - config.margins.left - config.margins.right;
     const height = config.outerHeight - config.margins.top - config.margins.bottom;
 
-    const minDate = sortedCommits.map(d => d.get('date')).min();
-    const maxDate = sortedCommits.map(d => d.get('date')).max();
+    const selectedCommits = sortedCommits.filter(commit =>
+        commit.get('date') >= config.chartStartDate && commit.get('date') <= config.chartEndDate);
 
-    const delays = sortedCommits.map(d => d.get('releaseDelay'))
+    const minDate = selectedCommits.map(d => d.get('date')).min();
+    const maxDate = selectedCommits.map(d => d.get('date')).max();
+
+    const delays = selectedCommits.map(d => d.get('releaseDelay'))
         .filter(d => d !== null)
         .sort()
         .toArray();
@@ -180,13 +241,13 @@ function updateChart(config, elements, data) {
 
     const xAxis = d3.axisBottom()
         .scale(xScale)
-        .ticks(d3.timeWeek.every(1))
-        .tickFormat(d3.timeFormat('%d/%m'));
+        .ticks(d3.timeMonth.every(1))
+        .tickFormat(d3.timeFormat('%m/%y'));
 
     xAxisGroup.call(xAxis);
 
     const commits = chartEl.selectAll('.commit')
-        .data(sortedCommits.toArray(), commit => commit.get('id'));
+        .data(selectedCommits.toArray(), commit => commit.get('id'));
 
     const newCommits = commits
         .enter()
@@ -205,11 +266,18 @@ function updateChart(config, elements, data) {
         .text(n => n.get('msg'));
 }
 
+const data = postProcessData(verifyFrontendRawLog, chartConfig);
+
+setInitialDates(chartConfig, data.globalEarliestDate, data.globalLatestDate);
 
 const chartElements = initialiseChartElements('#chart_parent', chartConfig);
 
-const data = postProcessData(verifyFrontendRawLog, chartConfig);
+// onChange should be called by event handlers and the like to, y'know, update the chart.
+function onChange() {
+    updateChart(chartConfig, chartElements, data);
+}
 
-updateChart(chartConfig, chartElements, data);
+onChange();
 
-// updateChart can be called by event handlers and the like to, y'know, update the chart.
+initialiseGlobalEvents(chartConfig, chartElements, onChange);
+

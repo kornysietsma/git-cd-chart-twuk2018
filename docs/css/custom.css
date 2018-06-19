@@ -50,3 +50,6 @@ body {
   fill: #fff;
 }
 
+fieldset.date-picker {
+    font-size: 0.8em;
+}
