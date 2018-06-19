@@ -200,6 +200,10 @@ function secondsFormatter(secs) {
     return `${Math.floor(duration.asDays())} d`;
 }
 
+function sanitise(str) {
+    return str.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function commitAsHtml(config, commit) {
     const msg = commit.get('msg');
     const author = commit.get('author');
@@ -219,8 +223,8 @@ function commitAsHtml(config, commit) {
         ? '(never released)'
         : `Released: ${releaseTag} at ${moment.unix(releaseDate).format()}<br/>Release delay of roughly ${releaseDelayDuration.humanize()}`;
 
-    return `<p>Commit: ${commitHtml}<br/>` +
-        `Message: ${msg}<br/>` +
+    return `<p>${commitHtml}<br/>` +
+        `${sanitise(msg)}<br/>` +
         `Author: ${author} at ${authorTime}<br/>` +
         `Committer: ${committer} at ${commitTime}<br/>` +
         `${releaseInfo}</p>` +
