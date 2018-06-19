@@ -1,5 +1,5 @@
-import {removeWarning} from './utils.js';
-import {verifyFrontendRawLog, verifyReleaseTagMatcher, verifyCommitPrefix} from './data/verify_frontend_log.js';
+import { removeWarning } from './utils.js';
+import { allData } from './data/all.js';
 
 removeWarning('old_browser_warning');
 
@@ -12,21 +12,25 @@ const chartConfig = {
     },
     outerWidth: 1024,
     outerHeight: 768,
-    releaseTagMatcher: verifyReleaseTagMatcher,
-    commitPrefix: verifyCommitPrefix,
     durationSplitAt: 0.95, // proportion of the chart
     durationSplitQuantile: 0.99, // proportion of the data
-    chartStartDate: null, // populated later
-    chartEndDate: null, // populated later
+    chartStartDate: moment('2017-01-01','YYYY-MM-DD').unix(),
+    chartEndDate: moment().unix(),
     selectedCommit: null,
     selectedCommitEl: null,
+    selectedProject: 'verifyFrontend',
 };
 
-function setInitialDates(config, earliestDate, latestDate) {
-    const oneYearAgo = moment.unix(latestDate).subtract(1, 'years').unix();
-    const defaultStartDate = Math.max(earliestDate, oneYearAgo);
-    config.chartStartDate = defaultStartDate;
-    config.chartEndDate = latestDate;
+function initialiseProjects(allProjectData, config) {
+    const projectEl = document.getElementById('project');
+
+    Object.entries(allData)
+        .sort(([p1, _d1], [p2, _d2]) => p1.localeCompare(p2))
+        .forEach(([project, data]) => {
+            const selectedText = (project === config.selectedProject) ? ' selected' : '';
+            projectEl.insertAdjacentHTML('beforeEnd',
+                `<option value="${project}"${selectedText}>${data.title}</option>`);
+        });
 }
 
 function initialiseChartElements(rootSelector, config) {
@@ -57,6 +61,7 @@ function initialiseChartElements(rootSelector, config) {
     inspectorEl.innerHTML = '<p>Select a commit for more details</p>';
 
     return {
+        projectEl: document.getElementById('project'),
         chartEl,
         xAxisGroup,
         yAxisGroup,
@@ -65,6 +70,7 @@ function initialiseChartElements(rootSelector, config) {
         inspectorEl,
     };
 }
+
 
 function initialiseGlobalEvents(config, chartElements, onChangeFn) {
     chartElements.fromDateEl.addEventListener('change', () => {
@@ -86,6 +92,12 @@ function initialiseGlobalEvents(config, chartElements, onChangeFn) {
         } else {
             console.log('invalid end date:', newDate);
         }
+    });
+
+    chartElements.projectEl.addEventListener('change', () => {
+        const newProject = chartElements.projectEl.value;
+        config.selectedProject = newProject; // could also set dates??
+        onChangeFn();
     });
 }
 
@@ -337,14 +349,18 @@ function updateChart(config, elements, data) {
         .remove();
 }
 
-const data = postProcessData(verifyFrontendRawLog, chartConfig);
-
-setInitialDates(chartConfig, data.globalEarliestDate, data.globalLatestDate);
+// only once - set up project dropDown, initialize global project data
+initialiseProjects(allData, chartConfig);
 
 const chartElements = initialiseChartElements('#chart_parent', chartConfig);
 
 // onChange should be called by event handlers and the like to, y'know, update the chart.
 function onChange() {
+    const project = allData[chartConfig.selectedProject];
+    chartConfig.releaseTagMatcher = project.releaseTagMatcher;
+    chartConfig.commitPrefix = project.commitPrefix;
+
+    const data = postProcessData(project.rawLog, chartConfig);
     updateChart(chartConfig, chartElements, data);
 }
 
