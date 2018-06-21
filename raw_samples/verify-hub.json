@@ -1,4 +1,765 @@
 [ {
+  "committer" : "noreply@github.com",
+  "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41",
+  "author" : "alan.carter@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-20T14:39:20+01:00",
+  "author-time" : "2018-06-20T14:39:20+01:00",
+  "msg" : "Merge pull request #84 from alphagov/bau/travis_changes",
+  "diffs" : { },
+  "tags" : [ {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "william.palmer@digital.cabinet-office.gov.uk",
+  "id" : "ba4417373dd7247d7272d72d8eb5cca2430a9fc6",
+  "author" : "william.palmer@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-20T10:15:15+01:00",
+  "author-time" : "2018-06-20T10:15:15+01:00",
+  "msg" : "bau: test on more java versions, run integration tests on travis",
+  "diffs" : {
+    "modify" : 6
+  },
+  "tags" : [ {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-19T15:25:11+01:00",
+  "author-time" : "2018-06-19T15:25:11+01:00",
+  "msg" : "Merge pull request #83 from alphagov/bau/indirection_minus_minus",
+  "diffs" : {
+    "add" : 2,
+    "modify" : 28,
+    "delete" : 2
+  },
+  "tags" : [ {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "william.palmer@digital.cabinet-office.gov.uk",
+  "id" : "08f8144b4dd635b1c33be9e57551600bd2b32bf0",
+  "author" : "william.palmer@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-19T15:18:39+01:00",
+  "author-time" : "2018-06-19T15:18:39+01:00",
+  "msg" : "bau: indirection minus minus",
+  "diffs" : {
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-19T13:39:13+01:00",
+  "author-time" : "2018-06-19T13:39:13+01:00",
+  "msg" : "Merge pull request #82 from alphagov/VCU-27-Gradle-4.7-Upgrade",
+  "diffs" : {
+    "modify" : 12,
+    "delete" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "38218115+dbes-gds@users.noreply.github.com",
+  "id" : "5c626ad56e7b275ecc13e22c2c75074d89a27acf",
+  "author" : "38218115+dbes-gds@users.noreply.github.com",
+  "commit-time" : "2018-06-19T13:12:46+01:00",
+  "author-time" : "2018-06-18T17:45:01+01:00",
+  "msg" : "VCU-27 Gradle 4.7 upgrade",
+  "diffs" : {
+    "modify" : 9,
+    "add" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02",
+  "author" : "vixus0@gmail.com",
+  "commit-time" : "2018-06-19T11:56:35+01:00",
+  "author-time" : "2018-06-19T11:56:35+01:00",
+  "msg" : "Merge pull request #77 from alphagov/local-startup-fixes",
+  "diffs" : {
+    "add" : 3,
+    "modify" : 25,
+    "delete" : 2
+  },
+  "tags" : [ {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "8beae93a788686788f924640f0a2173fa9b4cdee",
+  "author" : "vixus0@gmail.com",
+  "commit-time" : "2018-06-19T11:54:41+01:00",
+  "author-time" : "2018-06-19T11:54:41+01:00",
+  "msg" : "Merge pull request #47 from alphagov/use_new_signature_validators_in_saml_soap_proxy",
+  "diffs" : {
+    "add" : 226,
+    "modify" : 138,
+    "delete" : 3
+  },
+  "tags" : [ {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "alan.carter@digital.cabinet-office.gov.uk",
+  "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f",
+  "author" : "alan.carter@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-18T17:28:10+01:00",
+  "author-time" : "2018-06-18T17:28:10+01:00",
+  "msg" : "Revert \"Merge pull request #81 from alphagov/VCU-27-Gradle-4.8-Upgrade\"",
+  "diffs" : {
+    "modify" : 9,
+    "delete" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "1a33dc0c856f7d2dfd61d3042aa56b1085f46f56",
+  "author" : "alan.carter@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-18T16:48:27+01:00",
+  "author-time" : "2018-06-18T16:48:27+01:00",
+  "msg" : "Merge pull request #81 from alphagov/VCU-27-Gradle-4.8-Upgrade",
+  "diffs" : {
+    "add" : 1,
+    "modify" : 8,
+    "delete" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "38218115+dbes-gds@users.noreply.github.com",
+  "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a",
+  "author" : "38218115+dbes-gds@users.noreply.github.com",
+  "commit-time" : "2018-06-18T12:03:57+01:00",
+  "author-time" : "2018-06-14T12:50:45+01:00",
+  "msg" : "VCU-27-Gradle-4.8-Upgrade",
+  "diffs" : {
+    "modify" : 9,
+    "add" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "irene.lau@digital.cabinet-office.gov.uk",
+  "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b",
+  "author" : "irene.lau@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-15T12:06:36+01:00",
+  "author-time" : "2018-06-15T12:06:36+01:00",
+  "msg" : "Update supported-msa-versions.yml for release 3.0.1-814",
+  "diffs" : {
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "456be5d80ab26068da60024b083470288a081563",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-15T11:48:27+01:00",
+  "author-time" : "2018-06-15T11:48:27+01:00",
+  "msg" : "Merge pull request #80 from alphagov/bau-publish-hub-saml-to-bintray",
+  "diffs" : { },
+  "tags" : [ {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "richard.towers@digital.cabinet-office.gov.uk",
+  "id" : "d71cba1c08db6218f50ec8c426ab76b30a77affd",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-15T11:33:31+01:00",
+  "author-time" : "2018-06-15T11:33:31+01:00",
+  "msg" : "bau: Publish hub-saml to bintray",
+  "diffs" : {
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-15T11:11:17+01:00",
+  "author-time" : "2018-06-15T11:11:17+01:00",
+  "msg" : "Merge pull request #79 from alphagov/bau-publish-hub-saml-to-bintray",
+  "diffs" : { },
+  "tags" : [ {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "richard.towers@digital.cabinet-office.gov.uk",
+  "id" : "fddfe7a49802b8d23afab2b0046574917c2993a9",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-15T10:57:57+01:00",
+  "author-time" : "2018-06-15T10:57:57+01:00",
+  "msg" : "bau: Publish hub-saml to bintray",
+  "diffs" : {
+    "modify" : 3,
+    "delete" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "noreply@github.com",
+  "id" : "84c8066d6d3edfe96eb1f3250441b102156126df",
+  "author" : "andy.paine@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-14T15:17:57+01:00",
+  "author-time" : "2018-06-14T15:17:57+01:00",
+  "msg" : "Merge pull request #78 from alphagov/bau-travis-build",
+  "diffs" : { },
+  "tags" : [ {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "richard.towers@digital.cabinet-office.gov.uk",
+  "id" : "a0460685abe6b492e3de6057cfe7d788f5aeb9bd",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-14T15:00:30+01:00",
+  "author-time" : "2018-06-14T15:00:02+01:00",
+  "msg" : "bau: Add build status to README",
+  "diffs" : {
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "richard.towers@digital.cabinet-office.gov.uk",
+  "id" : "bfea606c8ef4ce6c53cc3009101b068c59d33032",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-14T15:00:30+01:00",
+  "author-time" : "2018-06-14T14:37:28+01:00",
+  "msg" : "bau: Fix failing tests when log level set to WARN",
+  "diffs" : {
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "richard.towers@digital.cabinet-office.gov.uk",
+  "id" : "bf34b928cb5aa3d7b502db39fcec3a5d13f779a0",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-14T15:00:30+01:00",
+  "author-time" : "2018-06-14T10:49:18+01:00",
+  "msg" : "bau: Use artifactory / bintray for ida-gradle",
+  "diffs" : {
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "richard.towers@digital.cabinet-office.gov.uk",
+  "id" : "bed7285b658dd43e7ef09fa4c0473bf05c609a1a",
+  "author" : "richard.towers@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-14T15:00:30+01:00",
+  "author-time" : "2018-06-14T10:27:52+01:00",
+  "msg" : "bau: Enable travis builds for verify-hub :tada:",
+  "diffs" : {
+    "add" : 1,
+    "modify" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
   "committer" : "irene.lau@digital.cabinet-office.gov.uk",
   "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d",
   "author" : "irene.lau@digital.cabinet-office.gov.uk",
@@ -12,6 +773,50 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -29,6 +834,50 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "38218115+dbes-gds@users.noreply.github.com",
@@ -48,6 +897,50 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -72,6 +965,77 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
+  "committer" : "andy.paine@digital.cabinet-office.gov.uk",
+  "id" : "388eec3a9273b59f63eefe8bcd3e377b71c744ed",
+  "author" : "andy.paine@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-06-04T20:39:30+01:00",
+  "author-time" : "2018-06-04T20:39:30+01:00",
+  "msg" : "BAU: Modify local config files for local-startup",
+  "diffs" : {
+    "modify" : 6
+  },
+  "tags" : [ {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "38218115+dbes-gds@users.noreply.github.com",
@@ -96,6 +1060,50 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -121,6 +1129,50 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "karol.gancarz@digital.cabinet-office.gov.uk",
@@ -148,6 +1200,50 @@
     "tags" : [ "build_15569" ],
     "timestamp" : "2018-06-08T16:38:18+01:00",
     "id" : "046c0a6dae58cd3f574476ec079d416cdc132e8d"
+  }, {
+    "tags" : [ "build_15570" ],
+    "timestamp" : "2018-06-14T15:17:57+01:00",
+    "id" : "84c8066d6d3edfe96eb1f3250441b102156126df"
+  }, {
+    "tags" : [ "build_15571" ],
+    "timestamp" : "2018-06-15T11:11:17+01:00",
+    "id" : "a1464313a3a51d5d39908ac5b5f54a91e793dc79"
+  }, {
+    "tags" : [ "build_15572" ],
+    "timestamp" : "2018-06-15T11:48:27+01:00",
+    "id" : "456be5d80ab26068da60024b083470288a081563"
+  }, {
+    "tags" : [ "build_15573" ],
+    "timestamp" : "2018-06-15T12:06:36+01:00",
+    "id" : "5a34996fc7d0a4de522aec80c79bdd9e618d9b3b"
+  }, {
+    "tags" : [ "build_15574" ],
+    "timestamp" : "2018-06-18T12:03:57+01:00",
+    "id" : "aed72e25771d64a9510d30ae5b7ae9f2ac09f61a"
+  }, {
+    "tags" : [ "build_15576" ],
+    "timestamp" : "2018-06-18T17:28:10+01:00",
+    "id" : "dad5e8709e9d86e46c8dfa9bd96103599a056c5f"
+  }, {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -673,7 +1769,7 @@
   "msg" : "Merge pull request #64 from alphagov/hub-103-add-client-truststore-back-to-policy-and-config",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "release_716", "build_15551" ],
+    "tags" : [ "build_15551", "release_716" ],
     "timestamp" : "2018-05-08T11:15:50+01:00",
     "id" : "a509992e15a0ecf543d50e600983abe846f34ed6"
   } ]
@@ -688,7 +1784,7 @@
     "modify" : 11
   },
   "tags" : [ {
-    "tags" : [ "release_716", "build_15551" ],
+    "tags" : [ "build_15551", "release_716" ],
     "timestamp" : "2018-05-08T11:15:50+01:00",
     "id" : "a509992e15a0ecf543d50e600983abe846f34ed6"
   } ]
@@ -705,7 +1801,7 @@
     "timestamp" : "2018-05-08T10:31:37+01:00",
     "id" : "7cfaaece09baa86abeb46f99ee3c182087b31e85"
   }, {
-    "tags" : [ "release_716", "build_15551" ],
+    "tags" : [ "build_15551", "release_716" ],
     "timestamp" : "2018-05-08T11:15:50+01:00",
     "id" : "a509992e15a0ecf543d50e600983abe846f34ed6"
   } ]
@@ -724,7 +1820,7 @@
     "timestamp" : "2018-05-08T10:31:37+01:00",
     "id" : "7cfaaece09baa86abeb46f99ee3c182087b31e85"
   }, {
-    "tags" : [ "release_716", "build_15551" ],
+    "tags" : [ "build_15551", "release_716" ],
     "timestamp" : "2018-05-08T11:15:50+01:00",
     "id" : "a509992e15a0ecf543d50e600983abe846f34ed6"
   } ]
@@ -743,7 +1839,7 @@
     "timestamp" : "2018-05-08T10:31:37+01:00",
     "id" : "7cfaaece09baa86abeb46f99ee3c182087b31e85"
   }, {
-    "tags" : [ "release_716", "build_15551" ],
+    "tags" : [ "build_15551", "release_716" ],
     "timestamp" : "2018-05-08T11:15:50+01:00",
     "id" : "a509992e15a0ecf543d50e600983abe846f34ed6"
   } ]
@@ -758,7 +1854,7 @@
     "modify" : 3
   },
   "tags" : [ {
-    "tags" : [ "build_15549", "release_715" ],
+    "tags" : [ "release_715", "build_15549" ],
     "timestamp" : "2018-05-03T17:08:19+01:00",
     "id" : "2077940c486c8d0f30c0af98d4ab880258feccce"
   } ]
@@ -777,7 +1873,7 @@
     "timestamp" : "2018-05-03T11:51:32+01:00",
     "id" : "6c102c2c0ff6f5551c33cfb099aa1bd5e73f9069"
   }, {
-    "tags" : [ "build_15549", "release_715" ],
+    "tags" : [ "release_715", "build_15549" ],
     "timestamp" : "2018-05-03T17:08:19+01:00",
     "id" : "2077940c486c8d0f30c0af98d4ab880258feccce"
   } ]
@@ -792,7 +1888,7 @@
     "modify" : 2
   },
   "tags" : [ {
-    "tags" : [ "build_15547", "release_714" ],
+    "tags" : [ "release_714", "build_15547" ],
     "timestamp" : "2018-05-03T11:11:29+01:00",
     "id" : "4bd6be1511a8fcbfa07a0031a0575c8645810513"
   } ]
@@ -835,7 +1931,7 @@
     "modify" : 1
   },
   "tags" : [ {
-    "tags" : [ "build_15545", "release_712" ],
+    "tags" : [ "release_712", "build_15545" ],
     "timestamp" : "2018-04-30T17:20:51+01:00",
     "id" : "a2c036f7025d5466fe4c45bbf5bf7324de7d3747"
   } ]
@@ -852,7 +1948,7 @@
     "timestamp" : "2018-04-30T14:17:54+01:00",
     "id" : "89368e3b5dcb9f300335e656791dba8adb08d2d0"
   }, {
-    "tags" : [ "build_15545", "release_712" ],
+    "tags" : [ "release_712", "build_15545" ],
     "timestamp" : "2018-04-30T17:20:51+01:00",
     "id" : "a2c036f7025d5466fe4c45bbf5bf7324de7d3747"
   } ]
@@ -872,7 +1968,7 @@
     "timestamp" : "2018-04-30T14:17:54+01:00",
     "id" : "89368e3b5dcb9f300335e656791dba8adb08d2d0"
   }, {
-    "tags" : [ "build_15545", "release_712" ],
+    "tags" : [ "release_712", "build_15545" ],
     "timestamp" : "2018-04-30T17:20:51+01:00",
     "id" : "a2c036f7025d5466fe4c45bbf5bf7324de7d3747"
   } ]
@@ -896,7 +1992,7 @@
     "timestamp" : "2018-04-30T14:17:54+01:00",
     "id" : "89368e3b5dcb9f300335e656791dba8adb08d2d0"
   }, {
-    "tags" : [ "build_15545", "release_712" ],
+    "tags" : [ "release_712", "build_15545" ],
     "timestamp" : "2018-04-30T17:20:51+01:00",
     "id" : "a2c036f7025d5466fe4c45bbf5bf7324de7d3747"
   } ]
@@ -921,7 +2017,7 @@
     "timestamp" : "2018-04-30T14:17:54+01:00",
     "id" : "89368e3b5dcb9f300335e656791dba8adb08d2d0"
   }, {
-    "tags" : [ "build_15545", "release_712" ],
+    "tags" : [ "release_712", "build_15545" ],
     "timestamp" : "2018-04-30T17:20:51+01:00",
     "id" : "a2c036f7025d5466fe4c45bbf5bf7324de7d3747"
   } ]
@@ -949,7 +2045,7 @@
     "timestamp" : "2018-04-30T14:17:54+01:00",
     "id" : "89368e3b5dcb9f300335e656791dba8adb08d2d0"
   }, {
-    "tags" : [ "build_15545", "release_712" ],
+    "tags" : [ "release_712", "build_15545" ],
     "timestamp" : "2018-04-30T17:20:51+01:00",
     "id" : "a2c036f7025d5466fe4c45bbf5bf7324de7d3747"
   } ]
@@ -962,7 +2058,7 @@
   "msg" : "Merge pull request #58 from alphagov/bau-update-to-use-non-deprecated-class-for-truststore-config",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "release_711", "build_15541" ],
+    "tags" : [ "build_15541", "release_711" ],
     "timestamp" : "2018-04-25T11:43:33+01:00",
     "id" : "33f2238c00d563483e438b99c202f2120ab92908"
   } ]
@@ -977,7 +2073,7 @@
     "modify" : 12
   },
   "tags" : [ {
-    "tags" : [ "release_711", "build_15541" ],
+    "tags" : [ "build_15541", "release_711" ],
     "timestamp" : "2018-04-25T11:43:33+01:00",
     "id" : "33f2238c00d563483e438b99c202f2120ab92908"
   } ]
@@ -1035,7 +2131,7 @@
   "msg" : "Merge pull request #55 from alphagov/BAU-update-hub-config",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "build_15538", "release_708" ],
+    "tags" : [ "release_708", "build_15538" ],
     "timestamp" : "2018-04-23T12:45:19+01:00",
     "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
@@ -1050,7 +2146,7 @@
     "modify" : 6
   },
   "tags" : [ {
-    "tags" : [ "build_15538", "release_708" ],
+    "tags" : [ "release_708", "build_15538" ],
     "timestamp" : "2018-04-23T12:45:19+01:00",
     "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
@@ -1069,7 +2165,7 @@
     "timestamp" : "2018-04-23T12:07:36+01:00",
     "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
   }, {
-    "tags" : [ "build_15538", "release_708" ],
+    "tags" : [ "release_708", "build_15538" ],
     "timestamp" : "2018-04-23T12:45:19+01:00",
     "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
@@ -1094,7 +2190,7 @@
     "timestamp" : "2018-04-23T12:07:36+01:00",
     "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
   }, {
-    "tags" : [ "build_15538", "release_708" ],
+    "tags" : [ "release_708", "build_15538" ],
     "timestamp" : "2018-04-23T12:45:19+01:00",
     "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
@@ -1121,7 +2217,7 @@
     "timestamp" : "2018-04-23T12:07:36+01:00",
     "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
   }, {
-    "tags" : [ "build_15538", "release_708" ],
+    "tags" : [ "release_708", "build_15538" ],
     "timestamp" : "2018-04-23T12:45:19+01:00",
     "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
@@ -1146,117 +2242,7 @@
     "timestamp" : "2018-04-23T12:07:36+01:00",
     "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
   }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "5e958653486bcfd8bf969c536e5d8ff7c4fb4151",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-20T16:59:45+01:00",
-  "author-time" : "2018-04-20T16:50:52+01:00",
-  "msg" : "BAU: Update publish.gradle to only publish hub-saml projects",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "51125878a06923dc16b072ed41756b5a7e913818",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-20T15:41:09+01:00",
-  "author-time" : "2018-04-20T15:41:09+01:00",
-  "msg" : "Merge branch 'hub-saml-merge'",
-  "diffs" : {
-    "add" : 905
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "c2f81425ca30143006c382ba7caf946f332e18bb",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-20T15:41:02+01:00",
-  "author-time" : "2018-04-20T15:36:54+01:00",
-  "msg" : "BAU: Prepare hub-saml for merge with hub",
-  "diffs" : {
-    "delete" : 11,
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "bc9be8455a24c705a70b74afab32afebe50ad4a6",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-20T15:39:36+01:00",
-  "author-time" : "2018-04-20T15:39:36+01:00",
-  "msg" : "BAU: Prepare hub for hub-saml merge",
-  "diffs" : {
-    "modify" : 24,
-    "add" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
+    "tags" : [ "release_708", "build_15538" ],
     "timestamp" : "2018-04-23T12:45:19+01:00",
     "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
@@ -1308,33 +2294,6 @@
     "id" : "8a2da277bc6ba766961701f6206d7e6309c9745e"
   } ]
 }, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "7d87a7b6cba6e54889f92f69a99f9a1db502247e",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-18T11:57:13+01:00",
-  "author-time" : "2018-04-18T11:57:13+01:00",
-  "msg" : "BAU: Update to use latest version of verify-saml-libs Co-Authored-by: Rachel Smith <rachel.smith@digital.cabinet-office.gov.uk>",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
   "committer" : "irene.lau@digital.cabinet-office.gov.uk",
   "id" : "69d41b933598357238b24b886e5eead8d50e2803",
   "author" : "irene.lau@digital.cabinet-office.gov.uk",
@@ -1345,7 +2304,7 @@
     "modify" : 2
   },
   "tags" : [ {
-    "tags" : [ "release_705", "release_707", "build_15531" ],
+    "tags" : [ "release_705", "build_15531", "release_707" ],
     "timestamp" : "2018-04-16T15:33:14+01:00",
     "id" : "69d41b933598357238b24b886e5eead8d50e2803"
   } ]
@@ -1471,6 +2430,38 @@
     "id" : "34210322a077264c8a233c086b7e2c665caf34ea"
   } ]
 }, {
+  "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
+  "id" : "b24e61a084fcc3038ba0b78949ad44bb20e1fb0b",
+  "author" : "christopher.holmes@digital.cabinet-office.gov.uk",
+  "commit-time" : "2018-04-10T10:18:59+01:00",
+  "author-time" : "2018-04-06T15:36:57+01:00",
+  "msg" : "fb: use new signature validators in saml-soap-proxy",
+  "diffs" : {
+    "modify" : 6,
+    "delete" : 1
+  },
+  "tags" : [ {
+    "tags" : [ "build_15579" ],
+    "timestamp" : "2018-06-19T11:54:41+01:00",
+    "id" : "8beae93a788686788f924640f0a2173fa9b4cdee"
+  }, {
+    "tags" : [ "build_15580" ],
+    "timestamp" : "2018-06-19T11:56:35+01:00",
+    "id" : "96be3d8c1a3874a7fa323f58974c46cc4afb6d02"
+  }, {
+    "tags" : [ "build_15581" ],
+    "timestamp" : "2018-06-19T13:39:13+01:00",
+    "id" : "fb1624645f169080d15b8df184be991b4c0cdeaa"
+  }, {
+    "tags" : [ "build_15582" ],
+    "timestamp" : "2018-06-19T15:25:11+01:00",
+    "id" : "12a2f909fb6d8fc779e3b929474f0ce4f751e016"
+  }, {
+    "tags" : [ "build_15583" ],
+    "timestamp" : "2018-06-20T14:39:20+01:00",
+    "id" : "ce0b3c3f017adbbaf801c39565e8e2154ab67b41"
+  } ]
+}, {
   "committer" : "irene.lau@digital.cabinet-office.gov.uk",
   "id" : "47355699b58276b3e4af28e3fdd5db7ff74abc80",
   "author" : "irene.lau@digital.cabinet-office.gov.uk",
@@ -1496,85 +2487,6 @@
     "tags" : [ "build_15530", "release_704" ],
     "timestamp" : "2018-04-16T12:19:09+01:00",
     "id" : "34210322a077264c8a233c086b7e2c665caf34ea"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "ad06d354582f3cd1415bf83080b3be4299c4bfdb",
-  "author" : "simonwo@users.noreply.github.com",
-  "commit-time" : "2018-04-09T15:33:43+01:00",
-  "author-time" : "2018-04-09T15:33:43+01:00",
-  "msg" : "Merge pull request #20 from alphagov/bau_use_latest_saml_libs",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "id" : "24079a37eec721b0814936c616232f8871a52ae3",
-  "author" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-09T15:29:56+01:00",
-  "author-time" : "2018-04-09T15:29:56+01:00",
-  "msg" : "bau: use the latest saml-libs",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "irene.lau@digital.cabinet-office.gov.uk",
-  "id" : "f67e99b6fc1dd3c82af52b1763cebb583b45f1ab",
-  "author" : "irene.lau@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-09T13:34:19+01:00",
-  "author-time" : "2018-04-09T13:34:19+01:00",
-  "msg" : "BAU: Use a later version of verify saml libs",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -1635,58 +2547,6 @@
     "tags" : [ "build_15530", "release_704" ],
     "timestamp" : "2018-04-16T12:19:09+01:00",
     "id" : "34210322a077264c8a233c086b7e2c665caf34ea"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "aa6b673a42fac83c18fae7e065b198cf680fa334",
-  "author" : "richard.towers@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-06T13:57:15+01:00",
-  "author-time" : "2018-04-06T13:57:15+01:00",
-  "msg" : "Merge pull request #19 from alphagov/use_new_signature_validator_support",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "id" : "153fa535349eb508d0fb17ac53ebb0e95a743283",
-  "author" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-06T13:47:08+01:00",
-  "author-time" : "2018-04-05T17:58:59+01:00",
-  "msg" : "firebreak: use signature validation support code",
-  "diffs" : {
-    "modify" : 4
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "richard.towers@digital.cabinet-office.gov.uk",
@@ -1812,33 +2672,6 @@
     "id" : "34210322a077264c8a233c086b7e2c665caf34ea"
   } ]
 }, {
-  "committer" : "james.howes@digital.cabinet-office.gov.uk",
-  "id" : "4822301836af54d535f59ecc2c3fe8823f8afffc",
-  "author" : "james.howes@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-04T15:11:46+01:00",
-  "author-time" : "2018-04-04T15:11:46+01:00",
-  "msg" : "🔥  Upgrade version of verify-saml-libs",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
   "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
   "id" : "b3932b42bcfb4e1e18780374d2d4f6484954d3bb",
   "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
@@ -1880,87 +2713,6 @@
     "tags" : [ "build_15530", "release_704" ],
     "timestamp" : "2018-04-16T12:19:09+01:00",
     "id" : "34210322a077264c8a233c086b7e2c665caf34ea"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "eb0f35e5ccef91fcd85cf4e2d1ae87ffa1f6afa4",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-04T13:50:55+01:00",
-  "author-time" : "2018-04-04T13:50:55+01:00",
-  "msg" : "🔥: Actually update saml_libs_version",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "a602433c1372d14f95cd497195be69204c01ff13",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-04T13:48:18+01:00",
-  "author-time" : "2018-04-04T13:48:18+01:00",
-  "msg" : "🔥: Update saml libraries version",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "e9ab288aab6da1a413c3e47004eee5fb1958f616",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-04-04T11:49:12+01:00",
-  "author-time" : "2018-04-04T11:49:12+01:00",
-  "msg" : "🔥: Use new monorepo SAML libraries",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -2743,7 +3495,7 @@
   "msg" : "Merge pull request #39 from alphagov/abd21-update-event-emitter",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "build_15516", "release_703" ],
+    "tags" : [ "release_703", "build_15516" ],
     "timestamp" : "2018-03-20T13:28:14Z",
     "id" : "3fbd024a0e89f65c0b6193e17b3bcbec818e29d0"
   } ]
@@ -2758,7 +3510,7 @@
     "modify" : 4
   },
   "tags" : [ {
-    "tags" : [ "build_15516", "release_703" ],
+    "tags" : [ "release_703", "build_15516" ],
     "timestamp" : "2018-03-20T13:28:14Z",
     "id" : "3fbd024a0e89f65c0b6193e17b3bcbec818e29d0"
   } ]
@@ -2873,33 +3625,6 @@
     "id" : "34210322a077264c8a233c086b7e2c665caf34ea"
   } ]
 }, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "08d51b374666bf49780452f7fa61194e0e7c9695",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-14T16:27:46Z",
-  "author-time" : "2018-03-14T16:27:46Z",
-  "msg" : "BAU: Update saml-test-utils and saml-extensions versions",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
   "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
   "id" : "d0d6ddc95f6631b9751700ab15f922153e44d725",
   "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
@@ -2911,63 +3636,9 @@
     "add" : 1
   },
   "tags" : [ {
-    "tags" : [ "build_15515", "release_702" ],
+    "tags" : [ "release_702", "build_15515" ],
     "timestamp" : "2018-03-09T15:57:47Z",
     "id" : "d0d6ddc95f6631b9751700ab15f922153e44d725"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "8ef51c30af8d12f9900b837f3d3ba8689746fac9",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-08T17:59:25Z",
-  "author-time" : "2018-03-08T17:59:25Z",
-  "msg" : "EID-430: Updated saml-utils and hence saml-security libraries",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "db84e4d501dffe1c3a4b1b276635a2fd061594dd",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-08T16:54:07Z",
-  "author-time" : "2018-03-08T16:54:07Z",
-  "msg" : "BAU: Convert Guava Optionals to Java Optionals",
-  "diffs" : {
-    "modify" : 6
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -2982,7 +3653,7 @@
     "timestamp" : "2018-03-08T14:24:45Z",
     "id" : "e280925cbc606b718afce316e422547fe063a3b9"
   }, {
-    "tags" : [ "build_15515", "release_702" ],
+    "tags" : [ "release_702", "build_15515" ],
     "timestamp" : "2018-03-09T15:57:47Z",
     "id" : "d0d6ddc95f6631b9751700ab15f922153e44d725"
   } ]
@@ -3001,7 +3672,7 @@
     "timestamp" : "2018-03-08T14:24:45Z",
     "id" : "e280925cbc606b718afce316e422547fe063a3b9"
   }, {
-    "tags" : [ "build_15515", "release_702" ],
+    "tags" : [ "release_702", "build_15515" ],
     "timestamp" : "2018-03-09T15:57:47Z",
     "id" : "d0d6ddc95f6631b9751700ab15f922153e44d725"
   } ]
@@ -3020,170 +3691,9 @@
     "timestamp" : "2018-03-08T14:24:45Z",
     "id" : "e280925cbc606b718afce316e422547fe063a3b9"
   }, {
-    "tags" : [ "build_15515", "release_702" ],
+    "tags" : [ "release_702", "build_15515" ],
     "timestamp" : "2018-03-09T15:57:47Z",
     "id" : "d0d6ddc95f6631b9751700ab15f922153e44d725"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "833730b4d616385207f542c6c8e6ad28f8152853",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-07T18:59:16Z",
-  "author-time" : "2018-03-07T18:59:16Z",
-  "msg" : "EID-430: Removed unnecessary wrappers for DestinationValidator",
-  "diffs" : {
-    "modify" : 8,
-    "delete" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "93fa670341efb7187212b40cf7fc835dc009ef6c",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-07T16:26:57Z",
-  "author-time" : "2018-03-07T16:26:57Z",
-  "msg" : "EID-430: Inlined Saml Domain Objects",
-  "diffs" : {
-    "modify" : 7,
-    "add" : 13
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "09ddefe69fd9851bb5b1b8049c308a0f4c4bc2af",
-  "author" : "vixus0@gmail.com",
-  "commit-time" : "2018-03-07T14:45:37Z",
-  "author-time" : "2018-03-07T14:45:37Z",
-  "msg" : "Merge pull request #17 from alphagov/refactor_update_verify_saml_utils",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "id" : "380cf326f02286b25eb24b15337270bbddcd9791",
-  "author" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-07T14:33:00Z",
-  "author-time" : "2018-03-06T18:15:00Z",
-  "msg" : "refactor: update saml-utils and delete code",
-  "diffs" : {
-    "modify" : 6
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "8bee76170a0809281c4ddd81444d813919d85e39",
-  "author" : "vixus0@gmail.com",
-  "commit-time" : "2018-03-07T14:30:36Z",
-  "author-time" : "2018-03-07T14:30:36Z",
-  "msg" : "Merge pull request #16 from alphagov/delete_metadata_marshallers",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "id" : "1980fa3ec4382c42d66f440f43755b4ead6500ab",
-  "author" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-07T10:28:22Z",
-  "author-time" : "2018-03-07T09:35:34Z",
-  "msg" : "refactor: delete metadata marshallers",
-  "diffs" : {
-    "modify" : 1,
-    "delete" : 20
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
@@ -3200,36 +3710,9 @@
     "timestamp" : "2018-03-08T14:24:45Z",
     "id" : "e280925cbc606b718afce316e422547fe063a3b9"
   }, {
-    "tags" : [ "build_15515", "release_702" ],
+    "tags" : [ "release_702", "build_15515" ],
     "timestamp" : "2018-03-09T15:57:47Z",
     "id" : "d0d6ddc95f6631b9751700ab15f922153e44d725"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "018b40a33f1321caee50d4bab010b6311ce5635a",
-  "author" : "adrianwong1832@gmail.com",
-  "commit-time" : "2018-03-05T15:47:04Z",
-  "author-time" : "2018-03-05T15:47:04Z",
-  "msg" : "Merge pull request #15 from alphagov/extract_validation_for_eidas",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -3291,143 +3774,6 @@
     "id" : "36e2a272329ecaefeb5d5b16932fa8afdc4899e4"
   } ]
 }, {
-  "committer" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "id" : "6ebfb1fd615b40f36c0b338b047b9e979c102805",
-  "author" : "christopher.holmes@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-03-01T12:04:49Z",
-  "author-time" : "2018-03-01T11:57:47Z",
-  "msg" : "bau: update to latest verify-saml-utils",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "3a3351620fc9efe2aee3dd010b2c35d2f16b3abc",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-28T18:03:07Z",
-  "author-time" : "2018-02-28T17:31:19Z",
-  "msg" : "EID-430: Added validation for AuthnInstant in AuthnStatements",
-  "diffs" : {
-    "modify" : 9
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "6e1ba2f80dacdccda25382acecff1bfded39ad8b",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-28T18:03:07Z",
-  "author-time" : "2018-02-28T11:46:30Z",
-  "msg" : "EID-430: Extracted set of validation to validate IDP Responses",
-  "diffs" : {
-    "modify" : 2,
-    "add" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "c64e8d045be9257836ea8dbc6df62fbc07f53807",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-28T18:01:06Z",
-  "author-time" : "2018-02-28T18:01:06Z",
-  "msg" : "EID-430: Validate IssueInstant on IDP Response",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "87524f89e0ea82f17d7ce1df5fcb31c8f257d3af",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-28T18:00:16Z",
-  "author-time" : "2018-02-28T11:29:20Z",
-  "msg" : "EID-430: Moved validators away from decorators package",
-  "diffs" : {
-    "modify" : 2,
-    "rename" : 8
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
   "committer" : "noreply@github.com",
   "id" : "16e66c6731b70bcd406e43da20a0d500e25b8a17",
   "author" : "Michael.Walker@softwire.com",
@@ -3436,7 +3782,7 @@
   "msg" : "Merge pull request #33 from alphagov/abd-35/update-to-send-events-to-stub-sqs",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "build_15511", "release_700" ],
+    "tags" : [ "release_700", "build_15511" ],
     "timestamp" : "2018-02-28T08:59:21Z",
     "id" : "16e66c6731b70bcd406e43da20a0d500e25b8a17"
   } ]
@@ -3452,203 +3798,9 @@
     "add" : 3
   },
   "tags" : [ {
-    "tags" : [ "build_15511", "release_700" ],
+    "tags" : [ "release_700", "build_15511" ],
     "timestamp" : "2018-02-28T08:59:21Z",
     "id" : "16e66c6731b70bcd406e43da20a0d500e25b8a17"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "05757053d7ca14c2998a2309420ad876c640bd5b",
-  "author" : "vixus0@gmail.com",
-  "commit-time" : "2018-02-27T15:37:52Z",
-  "author-time" : "2018-02-27T15:37:52Z",
-  "msg" : "Merge pull request #14 from alphagov/refactor-validation",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "426603eb624d68fccf89d62812d27918970be045",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-26T18:53:30Z",
-  "author-time" : "2018-02-26T17:53:46Z",
-  "msg" : "EID-430: Refactoring StatusCode Validation and Exception Handling in Hub Response Validators",
-  "diffs" : {
-    "add" : 1,
-    "modify" : 7
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "aeadd8cccad44d1a54e72156dddfdd8d321f7f5e",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-26T18:53:30Z",
-  "author-time" : "2018-02-26T17:11:29Z",
-  "msg" : "EID-430: Refactoring Hub Response Issuer Validations",
-  "diffs" : {
-    "modify" : 4
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "c8d501ddb872fb2f778719839e4f098c47cb6af4",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-26T18:53:30Z",
-  "author-time" : "2018-02-26T16:30:25Z",
-  "msg" : "EID-430: Refactored duplications in Hub Response Validators",
-  "diffs" : {
-    "add" : 2,
-    "modify" : 4
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "facce78f4babed249305707046e1e851dce05a32",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-26T18:53:30Z",
-  "author-time" : "2018-02-26T16:12:59Z",
-  "msg" : "EID-430: Refactored Hub Response Validators",
-  "diffs" : {
-    "delete" : 2,
-    "modify" : 7,
-    "add" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "cbcaa3602d8a236006e5ea44a1744d6c77ecb55e",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-26T18:52:45Z",
-  "author-time" : "2018-02-26T18:22:38Z",
-  "msg" : "EID-430: Refactoring Hub validators",
-  "diffs" : {
-    "modify" : 4,
-    "delete" : 2,
-    "rename" : 10
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "id" : "cc129963a69a11c5b15a1538ddea8302a59b53c9",
-  "author" : "minh.ngocdang@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-23T17:17:16Z",
-  "author-time" : "2018-02-23T17:03:51Z",
-  "msg" : "EID-430: Renamed classes to follow other class conventions",
-  "diffs" : {
-    "rename" : 2,
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -3662,7 +3814,7 @@
     "delete" : 13
   },
   "tags" : [ {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3682,7 +3834,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3701,7 +3853,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3716,36 +3868,9 @@
     "modify" : 4
   },
   "tags" : [ {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "a2be40fcfaa500f3ca7367f9ae0024e8fb8808e6",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-02-14T15:40:44Z",
-  "author-time" : "2018-02-14T15:40:44Z",
-  "msg" : "BAU: update saml-utils from 63 to 65",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -3764,7 +3889,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3788,7 +3913,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3808,7 +3933,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3821,7 +3946,7 @@
   "msg" : "Merge pull request #29 from alphagov/tt-1613-3-use-new-config-endpoint",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -3841,7 +3966,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -3856,11 +3981,11 @@
     "modify" : 2
   },
   "tags" : [ {
-    "tags" : [ "build_15492", "build_15503", "build_15502", "build_15499", "build_15494" ],
+    "tags" : [ "build_15492", "build_15494", "build_15502", "build_15503", "build_15499" ],
     "timestamp" : "2018-02-13T17:07:28Z",
     "id" : "810571bf7f295ca0365c7db1a4074babebce9b55"
   }, {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -3879,11 +4004,11 @@
     "timestamp" : "2018-02-13T14:28:32Z",
     "id" : "d232e6a84ce73effb46e820b89be782b4a8dac4f"
   }, {
-    "tags" : [ "build_15492", "build_15503", "build_15502", "build_15499", "build_15494" ],
+    "tags" : [ "build_15492", "build_15494", "build_15502", "build_15503", "build_15499" ],
     "timestamp" : "2018-02-13T17:07:28Z",
     "id" : "810571bf7f295ca0365c7db1a4074babebce9b55"
   }, {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -3904,11 +4029,11 @@
     "timestamp" : "2018-02-13T14:28:32Z",
     "id" : "d232e6a84ce73effb46e820b89be782b4a8dac4f"
   }, {
-    "tags" : [ "build_15492", "build_15503", "build_15502", "build_15499", "build_15494" ],
+    "tags" : [ "build_15492", "build_15494", "build_15502", "build_15503", "build_15499" ],
     "timestamp" : "2018-02-13T17:07:28Z",
     "id" : "810571bf7f295ca0365c7db1a4074babebce9b55"
   }, {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -3932,11 +4057,11 @@
     "timestamp" : "2018-02-13T14:28:32Z",
     "id" : "d232e6a84ce73effb46e820b89be782b4a8dac4f"
   }, {
-    "tags" : [ "build_15492", "build_15503", "build_15502", "build_15499", "build_15494" ],
+    "tags" : [ "build_15492", "build_15494", "build_15502", "build_15503", "build_15499" ],
     "timestamp" : "2018-02-13T17:07:28Z",
     "id" : "810571bf7f295ca0365c7db1a4074babebce9b55"
   }, {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -3960,11 +4085,11 @@
     "timestamp" : "2018-02-13T14:28:32Z",
     "id" : "d232e6a84ce73effb46e820b89be782b4a8dac4f"
   }, {
-    "tags" : [ "build_15492", "build_15503", "build_15502", "build_15499", "build_15494" ],
+    "tags" : [ "build_15492", "build_15494", "build_15502", "build_15503", "build_15499" ],
     "timestamp" : "2018-02-13T17:07:28Z",
     "id" : "810571bf7f295ca0365c7db1a4074babebce9b55"
   }, {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -3988,11 +4113,11 @@
     "timestamp" : "2018-02-13T14:28:32Z",
     "id" : "d232e6a84ce73effb46e820b89be782b4a8dac4f"
   }, {
-    "tags" : [ "build_15492", "build_15503", "build_15502", "build_15499", "build_15494" ],
+    "tags" : [ "build_15492", "build_15494", "build_15502", "build_15503", "build_15499" ],
     "timestamp" : "2018-02-13T17:07:28Z",
     "id" : "810571bf7f295ca0365c7db1a4074babebce9b55"
   }, {
-    "tags" : [ "release_698", "build_15505" ],
+    "tags" : [ "build_15505", "release_698" ],
     "timestamp" : "2018-02-14T10:20:46Z",
     "id" : "8e3de94a6a3644410a484eb2aba4e6fd464189c1"
   } ]
@@ -4012,7 +4137,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -4025,7 +4150,7 @@
   "msg" : "Merge pull request #25 from alphagov/bau/revert-security-utils-update",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4040,7 +4165,7 @@
     "modify" : 9
   },
   "tags" : [ {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4060,7 +4185,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -4073,7 +4198,7 @@
   "msg" : "Merge pull request #24 from alphagov/fix-polymorphic-fed-config-changes",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4089,7 +4214,7 @@
     "add" : 1
   },
   "tags" : [ {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4109,7 +4234,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -4126,7 +4251,7 @@
     "timestamp" : "2018-02-12T15:12:03Z",
     "id" : "a78ee7f42a9ade75f870800b642fb3fe52196738"
   }, {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4145,7 +4270,7 @@
     "timestamp" : "2018-02-12T15:12:03Z",
     "id" : "a78ee7f42a9ade75f870800b642fb3fe52196738"
   }, {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4165,7 +4290,7 @@
     "timestamp" : "2018-02-15T15:26:48Z",
     "id" : "0038e4e3d9202aaca5eec20ca39af249254150ea"
   }, {
-    "tags" : [ "build_15510", "release_699", "build_15508" ],
+    "tags" : [ "build_15508", "release_699", "build_15510" ],
     "timestamp" : "2018-02-15T15:44:09Z",
     "id" : "820d7c09c6b63406a2f08cabfbdb9d5bdc574548"
   } ]
@@ -4184,7 +4309,7 @@
     "timestamp" : "2018-02-12T15:12:03Z",
     "id" : "a78ee7f42a9ade75f870800b642fb3fe52196738"
   }, {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4205,7 +4330,7 @@
     "timestamp" : "2018-02-12T15:12:03Z",
     "id" : "a78ee7f42a9ade75f870800b642fb3fe52196738"
   }, {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4226,7 +4351,7 @@
     "timestamp" : "2018-02-12T15:12:03Z",
     "id" : "a78ee7f42a9ade75f870800b642fb3fe52196738"
   }, {
-    "tags" : [ "build_15489", "release_697" ],
+    "tags" : [ "release_697", "build_15489" ],
     "timestamp" : "2018-02-13T11:39:20Z",
     "id" : "e13a11287598aad2a9ee62cc23ec48e8bc93b27f"
   } ]
@@ -4242,7 +4367,7 @@
     "add" : 1
   },
   "tags" : [ {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4261,7 +4386,7 @@
     "timestamp" : "2018-02-07T16:34:08Z",
     "id" : "95302762b74c0ce029119d13735552c431f8fce0"
   }, {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4284,7 +4409,7 @@
     "timestamp" : "2018-02-07T16:34:08Z",
     "id" : "95302762b74c0ce029119d13735552c431f8fce0"
   }, {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4307,7 +4432,7 @@
     "timestamp" : "2018-02-07T16:34:08Z",
     "id" : "95302762b74c0ce029119d13735552c431f8fce0"
   }, {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4330,7 +4455,7 @@
     "timestamp" : "2018-02-07T16:34:08Z",
     "id" : "95302762b74c0ce029119d13735552c431f8fce0"
   }, {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4346,7 +4471,7 @@
     "add" : 4
   },
   "tags" : [ {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4361,7 +4486,7 @@
     "modify" : 7
   },
   "tags" : [ {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4377,7 +4502,7 @@
     "modify" : 9
   },
   "tags" : [ {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4400,7 +4525,7 @@
     "timestamp" : "2018-02-07T16:34:08Z",
     "id" : "95302762b74c0ce029119d13735552c431f8fce0"
   }, {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4415,7 +4540,7 @@
     "modify" : 1
   },
   "tags" : [ {
-    "tags" : [ "build_15483", "release_695" ],
+    "tags" : [ "release_695", "build_15483" ],
     "timestamp" : "2018-02-07T11:00:51Z",
     "id" : "93e99f87cd444804d383d9ead6f7888b0987e9ae"
   } ]
@@ -4439,7 +4564,7 @@
     "timestamp" : "2018-02-07T16:34:08Z",
     "id" : "95302762b74c0ce029119d13735552c431f8fce0"
   }, {
-    "tags" : [ "build_15500", "release_696", "build_15495", "build_15486", "build_15493" ],
+    "tags" : [ "build_15495", "build_15493", "release_696", "build_15486", "build_15500" ],
     "timestamp" : "2018-02-07T17:06:03Z",
     "id" : "b5d59b2a7a0eb7b07a8c4ddf91e44c913fe22af0"
   } ]
@@ -4454,7 +4579,7 @@
     "modify" : 15
   },
   "tags" : [ {
-    "tags" : [ "build_15483", "release_695" ],
+    "tags" : [ "release_695", "build_15483" ],
     "timestamp" : "2018-02-07T11:00:51Z",
     "id" : "93e99f87cd444804d383d9ead6f7888b0987e9ae"
   } ]
@@ -4469,7 +4594,7 @@
     "modify" : 7
   },
   "tags" : [ {
-    "tags" : [ "build_15483", "release_695" ],
+    "tags" : [ "release_695", "build_15483" ],
     "timestamp" : "2018-02-07T11:00:51Z",
     "id" : "93e99f87cd444804d383d9ead6f7888b0987e9ae"
   } ]
@@ -4486,7 +4611,7 @@
     "timestamp" : "2018-02-05T13:03:33Z",
     "id" : "6f41f78a2040f5ff8f4a863f39c4fe7d446791f5"
   }, {
-    "tags" : [ "build_15483", "release_695" ],
+    "tags" : [ "release_695", "build_15483" ],
     "timestamp" : "2018-02-07T11:00:51Z",
     "id" : "93e99f87cd444804d383d9ead6f7888b0987e9ae"
   } ]
@@ -4505,7 +4630,7 @@
     "timestamp" : "2018-02-05T13:03:33Z",
     "id" : "6f41f78a2040f5ff8f4a863f39c4fe7d446791f5"
   }, {
-    "tags" : [ "build_15483", "release_695" ],
+    "tags" : [ "release_695", "build_15483" ],
     "timestamp" : "2018-02-07T11:00:51Z",
     "id" : "93e99f87cd444804d383d9ead6f7888b0987e9ae"
   } ]
@@ -4520,7 +4645,7 @@
     "modify" : 1
   },
   "tags" : [ {
-    "tags" : [ "release_694", "build_15481" ],
+    "tags" : [ "build_15481", "release_694" ],
     "timestamp" : "2018-02-01T17:29:03Z",
     "id" : "193fc614618d0ffd9383df8b9aa735fb88e758d6"
   } ]
@@ -4537,7 +4662,7 @@
     "timestamp" : "2018-02-01T16:23:33Z",
     "id" : "7d6b38e56cee7d0ab46f02eb5c5d876e03e88792"
   }, {
-    "tags" : [ "release_694", "build_15481" ],
+    "tags" : [ "build_15481", "release_694" ],
     "timestamp" : "2018-02-01T17:29:03Z",
     "id" : "193fc614618d0ffd9383df8b9aa735fb88e758d6"
   } ]
@@ -4561,7 +4686,7 @@
     "timestamp" : "2018-02-01T16:23:33Z",
     "id" : "7d6b38e56cee7d0ab46f02eb5c5d876e03e88792"
   }, {
-    "tags" : [ "release_694", "build_15481" ],
+    "tags" : [ "build_15481", "release_694" ],
     "timestamp" : "2018-02-01T17:29:03Z",
     "id" : "193fc614618d0ffd9383df8b9aa735fb88e758d6"
   } ]
@@ -4582,7 +4707,7 @@
     "timestamp" : "2018-02-01T16:23:33Z",
     "id" : "7d6b38e56cee7d0ab46f02eb5c5d876e03e88792"
   }, {
-    "tags" : [ "release_694", "build_15481" ],
+    "tags" : [ "build_15481", "release_694" ],
     "timestamp" : "2018-02-01T17:29:03Z",
     "id" : "193fc614618d0ffd9383df8b9aa735fb88e758d6"
   } ]
@@ -4610,7 +4735,7 @@
     "timestamp" : "2018-02-01T16:23:33Z",
     "id" : "7d6b38e56cee7d0ab46f02eb5c5d876e03e88792"
   }, {
-    "tags" : [ "release_694", "build_15481" ],
+    "tags" : [ "build_15481", "release_694" ],
     "timestamp" : "2018-02-01T17:29:03Z",
     "id" : "193fc614618d0ffd9383df8b9aa735fb88e758d6"
   } ]
@@ -4623,7 +4748,7 @@
   "msg" : "Merge pull request #9 from alphagov/tt-1613-policy-use-loa-endpoint",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4638,7 +4763,7 @@
     "modify" : 1
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4654,7 +4779,7 @@
     "add" : 4
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4671,7 +4796,7 @@
     "add" : 4
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4686,7 +4811,7 @@
     "modify" : 9
   },
   "tags" : [ {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4701,7 +4826,7 @@
     "modify" : 8
   },
   "tags" : [ {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4716,7 +4841,7 @@
     "modify" : 11
   },
   "tags" : [ {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4732,7 +4857,7 @@
     "add" : 6
   },
   "tags" : [ {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4748,7 +4873,7 @@
     "add" : 6
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4768,7 +4893,7 @@
     "timestamp" : "2018-01-22T03:31:11-08:00",
     "id" : "437b95916c0b49c2d55625816e2761c3af766649"
   }, {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4789,7 +4914,7 @@
     "timestamp" : "2018-01-22T03:31:11-08:00",
     "id" : "437b95916c0b49c2d55625816e2761c3af766649"
   }, {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4812,7 +4937,7 @@
     "timestamp" : "2018-01-22T03:31:11-08:00",
     "id" : "437b95916c0b49c2d55625816e2761c3af766649"
   }, {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -4825,7 +4950,7 @@
   "msg" : "Merge pull request #12 from alphagov/dockerise",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -4841,7 +4966,7 @@
     "modify" : 6
   },
   "tags" : [ {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -4857,7 +4982,7 @@
     "add" : 6
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4872,7 +4997,7 @@
     "modify" : 1
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4887,7 +5012,7 @@
     "modify" : 20
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -4904,7 +5029,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -4923,7 +5048,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -4947,7 +5072,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -4972,7 +5097,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -4999,7 +5124,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -5026,36 +5151,9 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "1dd5a20dd5b4c3ce0507a99a034b3e25091ed123",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-01-12T12:24:24Z",
-  "author-time" : "2018-01-12T12:24:17Z",
-  "msg" : "BAU: bump saml-metadata-bindings-test version and fix test",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "karol.gancarz@digital.cabinet-office.gov.uk",
@@ -5068,7 +5166,7 @@
     "modify" : 20
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -5084,63 +5182,9 @@
     "add" : 6
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "1f140992ea79cdb48216dab487fd69100c6410ff",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-01-11T17:32:06Z",
-  "author-time" : "2018-01-11T17:31:19Z",
-  "msg" : "BAU: update saml-utils, saml-test-utils and saml-metadata-bindings-test dependencies",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "rachelcodesmith@outlook.com",
-  "id" : "b29580ee934a940d4a8fd911988d5400f95d94c5",
-  "author" : "rachelcodesmith@outlook.com",
-  "commit-time" : "2018-01-11T16:34:07Z",
-  "author-time" : "2018-01-11T16:34:07Z",
-  "msg" : "BAU: Updated ida-saml-extension version to use #41 Pair: @michaelwalker @rachelthecodesmith",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "noreply@github.com",
@@ -5167,7 +5211,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -5199,7 +5243,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -5230,62 +5274,9 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "0c66bf6329850116b21d96a1cd48ae134f2cadb8",
-  "author" : "Michael.Walker@softwire.com",
-  "commit-time" : "2018-01-11T12:08:11Z",
-  "author-time" : "2018-01-11T12:08:11Z",
-  "msg" : "Merge pull request #13 from alphagov/bau-reduce-dependencies",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "3fdaed5adaac9987abf89f8d21f739ec19920e6f",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-01-11T11:53:56Z",
-  "author-time" : "2018-01-11T11:53:56Z",
-  "msg" : "BAU: remove dependency on dropwizard-saml library",
-  "diffs" : {
-    "modify" : 3,
-    "delete" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "andy.paine@outlook.com",
@@ -5306,36 +5297,9 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "5ebe1b0cf3ca446b6107c2a50aa9a30589c4da2e",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2018-01-10T13:00:40Z",
-  "author-time" : "2018-01-10T11:58:56Z",
-  "msg" : "BAU: remove unnecessary reference to deprecated interface",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 }, {
   "committer" : "karol.gancarz@digital.cabinet-office.gov.uk",
@@ -5348,7 +5312,7 @@
     "modify" : 17
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -5363,7 +5327,7 @@
     "modify" : 10
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -5398,7 +5362,7 @@
     "timestamp" : "2018-01-12T16:07:54Z",
     "id" : "666014c45ad5fd3713f802ae484e84edd5531195"
   }, {
-    "tags" : [ "release_690", "build_15471" ],
+    "tags" : [ "build_15471", "release_690" ],
     "timestamp" : "2018-01-15T15:57:24Z",
     "id" : "ab25606d446d6593a18827625cce0e44ef14f6a0"
   } ]
@@ -5413,7 +5377,7 @@
     "modify" : 13
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -5428,7 +5392,7 @@
     "modify" : 10
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -5443,7 +5407,7 @@
     "modify" : 3
   },
   "tags" : [ {
-    "tags" : [ "release_693", "release_692", "build_15475" ],
+    "tags" : [ "build_15475", "release_693", "release_692" ],
     "timestamp" : "2018-01-25T10:27:12Z",
     "id" : "4978c7a2aa0c856b04f91d0e046dc82525152897"
   } ]
@@ -5462,7 +5426,7 @@
     "timestamp" : "2018-01-22T03:31:11-08:00",
     "id" : "437b95916c0b49c2d55625816e2761c3af766649"
   }, {
-    "tags" : [ "release_691", "build_15474" ],
+    "tags" : [ "build_15474", "release_691" ],
     "timestamp" : "2018-01-22T14:24:56Z",
     "id" : "7ddb7e1d1495568d5312ee7850881600d4119f6c"
   } ]
@@ -5475,7 +5439,7 @@
   "msg" : "Merge pull request #4 from alphagov/get-idps-4-loa",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "build_15465", "release_688", "release_687", "build_15464", "release_689" ],
+    "tags" : [ "release_688", "build_15465", "release_687", "release_689", "build_15464" ],
     "timestamp" : "2017-12-27T16:43:35Z",
     "id" : "1d313fa5c02990450c1d860a92a521e20e3cdfec"
   } ]
@@ -5490,7 +5454,7 @@
     "modify" : 3
   },
   "tags" : [ {
-    "tags" : [ "build_15465", "release_688", "release_687", "build_15464", "release_689" ],
+    "tags" : [ "release_688", "build_15465", "release_687", "release_689", "build_15464" ],
     "timestamp" : "2017-12-27T16:43:35Z",
     "id" : "1d313fa5c02990450c1d860a92a521e20e3cdfec"
   } ]
@@ -5506,7 +5470,7 @@
     "add" : 5
   },
   "tags" : [ {
-    "tags" : [ "build_15465", "release_688", "release_687", "build_15464", "release_689" ],
+    "tags" : [ "release_688", "build_15465", "release_687", "release_689", "build_15464" ],
     "timestamp" : "2017-12-27T16:43:35Z",
     "id" : "1d313fa5c02990450c1d860a92a521e20e3cdfec"
   } ]
@@ -5581,34 +5545,6 @@
     "id" : "1ac3b7e2e597f5b70ecba0ac82a10f15abd244df"
   } ]
 }, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "e80eaa2f2ed74c69cf21da57c5b414f80da38ea3",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-12-13T15:19:18Z",
-  "author-time" : "2017-12-13T15:19:18Z",
-  "msg" : "EID-325: Update Name Id Policy to use persistent for eIDAS Authn Request",
-  "diffs" : {
-    "modify" : 2,
-    "add" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
   "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
   "id" : "c67de9c0d9b240cba9298f7c746146dfb57ff1a3",
   "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
@@ -5617,1210 +5553,8 @@
   "msg" : "Initial commit",
   "diffs" : { },
   "tags" : [ {
-    "tags" : [ "release_684", "build_15460" ],
+    "tags" : [ "build_15460", "release_684" ],
     "timestamp" : "2017-12-08T16:54:17Z",
     "id" : "c67de9c0d9b240cba9298f7c746146dfb57ff1a3"
-  } ]
-}, {
-  "committer" : "timothywspence@gmail.com",
-  "id" : "81d7729d82f7fa11b886edb36f77e5f4a57ac92c",
-  "author" : "timothywspence@gmail.com",
-  "commit-time" : "2017-11-29T16:11:58Z",
-  "author-time" : "2017-11-29T16:11:58Z",
-  "msg" : "EID-297: bump saml library versions",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "timothywspence@gmail.com",
-  "id" : "f6ba23b4bf832ecbe44e663eea6d485c31630087",
-  "author" : "timothywspence@gmail.com",
-  "commit-time" : "2017-11-29T16:00:33Z",
-  "author-time" : "2017-11-29T16:00:33Z",
-  "msg" : "EID-297: bump saml utils version",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "keerthas@thoughtworks.com",
-  "id" : "edd074708519b84b38f56252c11b0d2b1125dc4a",
-  "author" : "keerthas@thoughtworks.com",
-  "commit-time" : "2017-11-28T17:29:18Z",
-  "author-time" : "2017-11-28T17:29:18Z",
-  "msg" : "TT-1687: Upgrading dropwizard-saml",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "michael.walker@softwire.com",
-  "id" : "55d5fbcf1b01a84466a4f80f98b9685c63158704",
-  "author" : "michael.walker@softwire.com",
-  "commit-time" : "2017-11-28T12:28:43Z",
-  "author-time" : "2017-11-28T12:11:40Z",
-  "msg" : "TT-1681: Change the Idp Paused Registration response to not be a success.",
-  "diffs" : {
-    "modify" : 4
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "0c429b2e88864abe081b77353c40d7148fc4ae25",
-  "author" : "andy-paine@users.noreply.github.com",
-  "commit-time" : "2017-11-27T14:48:00Z",
-  "author-time" : "2017-11-27T14:48:00Z",
-  "msg" : "Merge pull request #12 from alphagov/TT-1417",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "rachael.booth@digital.cabinet-office.gov.uk",
-  "id" : "b738ee312fc3d9fc371f21df45a06987d148d591",
-  "author" : "rachael.booth@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-11-27T14:37:23Z",
-  "author-time" : "2017-11-27T14:36:10Z",
-  "msg" : "TT-1417 Consistency validation checks issuer values",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "71f505e0a3d71031db39c11348c6d75657717c2a",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-11-24T16:47:12Z",
-  "author-time" : "2017-11-24T16:47:12Z",
-  "msg" : "EID-296: Update to use latest versions of saml libraries",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "d5f07278a1743de6fe9fe43a379af1d59b719a32",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-11-24T15:35:41Z",
-  "author-time" : "2017-11-24T15:35:41Z",
-  "msg" : "EID-296: Update to use latest versions of saml libraries",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "f55531326fd059d371dbe78975e59a1d02501ee2",
-  "author" : "richard@richard-towers.com",
-  "commit-time" : "2017-11-21T17:12:39Z",
-  "author-time" : "2017-11-21T17:12:39Z",
-  "msg" : "Merge pull request #11 from alphagov/TT-1419",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "rachael.booth@digital.cabinet-office.gov.uk",
-  "id" : "f14c82f81949bcc1803a517afbff84be311d7a9d",
-  "author" : "rachael.booth@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-11-21T16:53:00Z",
-  "author-time" : "2017-11-21T16:53:00Z",
-  "msg" : "TT-1419 Minor refactoring",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "rachael.booth@digital.cabinet-office.gov.uk",
-  "id" : "2d2ce76d526e947b54bd9d4cc402032812333262",
-  "author" : "rachael.booth@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-11-21T15:38:44Z",
-  "author-time" : "2017-11-21T10:52:51Z",
-  "msg" : "TT-1419 Error if pids are mismatched in idp assertions",
-  "diffs" : {
-    "modify" : 7
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "timothywspence@gmail.com",
-  "id" : "13d4e2f88441560059a86d8933d1f0d393b509a0",
-  "author" : "timothywspence@gmail.com",
-  "commit-time" : "2017-11-03T17:24:47Z",
-  "author-time" : "2017-11-03T17:23:41Z",
-  "msg" : "EID-279: introduce test to ensure loa ordering is preserved",
-  "diffs" : {
-    "modify" : 1,
-    "add" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "9a8b6b478cb1b384763ffcbf0edfda409579020d",
-  "author" : "irene.lau@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-26T15:04:41+01:00",
-  "author-time" : "2017-10-26T15:04:41+01:00",
-  "msg" : "Merge pull request #10 from alphagov/eid-251",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "fe56d458f7a64d4a8121c5b6d42680afc62d9be7",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-26T14:31:57+01:00",
-  "author-time" : "2017-10-21T00:36:17+01:00",
-  "msg" : "EID-251: Update Hub Transformers Factory",
-  "diffs" : {
-    "modify" : 3,
-    "add" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "71cbd3f04f223f7ca9e3832430331d00a6d60a91",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-23T16:01:24+01:00",
-  "author-time" : "2017-10-23T16:01:24+01:00",
-  "msg" : "BAU: Update to use latest version of SAML libraries",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "467e3e131a9977849a8736c1c020b8a8b3b0a2e8",
-  "author" : "richard@richard-towers.com",
-  "commit-time" : "2017-10-16T16:06:04+01:00",
-  "author-time" : "2017-10-16T16:06:04+01:00",
-  "msg" : "Merge pull request #9 from alphagov/TT-1256",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hristo.georgiev@digital.cabinet-office.gov.uk",
-  "id" : "1f99590a763750d7023d9c9b1e8a38a5cfd79e2b",
-  "author" : "hristo.georgiev@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-16T14:57:29+01:00",
-  "author-time" : "2017-10-16T14:57:29+01:00",
-  "msg" : "TT-1256: Handles potential error when encrypted attribute is missing and logs error using the issuer ID.",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hristo.georgiev@digital.cabinet-office.gov.uk",
-  "id" : "791ca57047be70747793a5fde3e769f93dd2a24d",
-  "author" : "hristo.georgiev@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-16T11:44:42+01:00",
-  "author-time" : "2017-10-16T11:44:42+01:00",
-  "msg" : "TT-1256: Adds VSP version in AuthnRequestFromRelyingParty",
-  "diffs" : {
-    "modify" : 1,
-    "add" : 6,
-    "delete" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "irene.lau@digital.cabinet-office.gov.uk",
-  "id" : "a89500dc66092172bb351ec9a8441810ca02ee66",
-  "author" : "irene.lau@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-11T15:06:16+01:00",
-  "author-time" : "2017-10-11T15:06:16+01:00",
-  "msg" : "EID-232: Add HubEidasAttributeQueryRequest with minimum attributes",
-  "diffs" : {
-    "add" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hristo.georgiev@digital.cabinet-office.gov.uk",
-  "id" : "a0369a7b8676955581d1d80cec4b95962fd611b2",
-  "author" : "hristo.georgiev@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-10-10T17:33:20+01:00",
-  "author-time" : "2017-10-10T17:33:20+01:00",
-  "msg" : "TT-1235: Upgrades saml-utils",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "25ae909b8b4fe4288ef1b3523e064cfb45646574",
-  "author" : "georgievh@yahoo.co.uk",
-  "commit-time" : "2017-10-06T16:13:24+01:00",
-  "author-time" : "2017-10-06T16:13:24+01:00",
-  "msg" : "Merge pull request #8 from alphagov/TT-1235",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "keerthas@thoughtworks.com",
-  "id" : "ecbfa2f08de9724e7483dfb4b57420216692c31f",
-  "author" : "keerthas@thoughtworks.com",
-  "commit-time" : "2017-10-06T16:11:55+01:00",
-  "author-time" : "2017-10-06T16:11:48+01:00",
-  "msg" : "TT-1235 Upgrading saml-utils",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "bdcae6296b236ed2384cea79496a3f5c9bced13d",
-  "author" : "vixus0@gmail.com",
-  "commit-time" : "2017-10-03T15:50:42+01:00",
-  "author-time" : "2017-10-03T15:50:42+01:00",
-  "msg" : "Merge pull request #7 from alphagov/open-source",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "andy.paine@outlook.com",
-  "id" : "4e95fa95c57e5e618d2db787dba7e31a89ff6b6a",
-  "author" : "andy.paine@outlook.com",
-  "commit-time" : "2017-10-03T15:41:08+01:00",
-  "author-time" : "2017-10-03T15:41:08+01:00",
-  "msg" : "BAU: Rename LICENSE and update README to match GOV.UK style",
-  "diffs" : {
-    "rename" : 1,
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "suneetkamath@hotmail.com",
-  "id" : "b21da367d6d61e63830bf6967df3538ccd765198",
-  "author" : "suneetkamath@hotmail.com",
-  "commit-time" : "2017-09-22T15:20:45+01:00",
-  "author-time" : "2017-09-22T15:20:45+01:00",
-  "msg" : "EID-181: Update to use latest version of saml libraries",
-  "diffs" : {
-    "modify" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "4126967069507e37b8c6ca4303cde64c83473269",
-  "author" : "nashraf@thoughtworks.com",
-  "commit-time" : "2017-09-22T14:21:45+01:00",
-  "author-time" : "2017-09-22T14:21:45+01:00",
-  "msg" : "Merge pull request #5 from alphagov/TT-1211",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "eae02eee1c0cadf110b90839a279c98cf6297b38",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-09-20T15:19:12+01:00",
-  "author-time" : "2017-09-20T13:59:21+01:00",
-  "msg" : "TT-1211: upgrade to dropwizard 1.1.4",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "suneetkamath@hotmail.com",
-  "id" : "113cf34187a7f27c61737b35ddf5423c11e53634",
-  "author" : "suneetkamath@hotmail.com",
-  "commit-time" : "2017-09-13T18:18:50+01:00",
-  "author-time" : "2017-09-13T18:18:50+01:00",
-  "msg" : "EID-181: Allow PassthroughAssertionUnmarshaller to support eidas LOA",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "suneetkamath@hotmail.com",
-  "id" : "18a279d4f97c1c839bb6805d6ecdea96f0b6b8f1",
-  "author" : "suneetkamath@hotmail.com",
-  "commit-time" : "2017-09-13T12:00:07+01:00",
-  "author-time" : "2017-09-13T12:00:07+01:00",
-  "msg" : "EID-181: Update to use latest version of SAML libs",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "b2ede7172cf2c267a4e8663c015e938317711396",
-  "author" : "nicolarhughes@gmail.com",
-  "commit-time" : "2017-09-08T15:55:30+01:00",
-  "author-time" : "2017-09-08T15:55:30+01:00",
-  "msg" : "Merge pull request #4 from alphagov/TT-983",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "1632b8c8417e4b5b9fd9711138751e2c6f6a6618",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-09-08T15:42:48+01:00",
-  "author-time" : "2017-09-08T15:42:48+01:00",
-  "msg" : "TT-983: remove address_history_verified attribute.",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "f24a2287e62b087da5126bbff1cd2f7c14b10310",
-  "author" : "stevetbutler@gmail.com",
-  "commit-time" : "2017-09-07T16:15:21+01:00",
-  "author-time" : "2017-09-07T16:15:21+01:00",
-  "msg" : "Merge pull request #3 from alphagov/TT-983",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "1f6b833ca1228510b894002f57ddd2e198e4e134",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-09-07T14:05:21+01:00",
-  "author-time" : "2017-09-07T14:05:21+01:00",
-  "msg" : "TT-983: move files from saml domain objects library and add address_history attribute",
-  "diffs" : {
-    "delete" : 1,
-    "add" : 3
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "id" : "10685f831fac4a807a75da7e34cf9e47b446aaea",
-  "author" : "hugh.emerson@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-09-07T13:15:37+01:00",
-  "author-time" : "2017-09-07T13:15:37+01:00",
-  "msg" : "BAU: update script to reference verify-build-scripts instead of ida-build-scripts",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "c43e353e85009b7544c1f2bf13dc627f1beaa652",
-  "author" : "tunylund@gmail.com",
-  "commit-time" : "2017-09-05T16:44:12+01:00",
-  "author-time" : "2017-09-05T16:44:12+01:00",
-  "msg" : "Merge pull request #2 from alphagov/TT-1082",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "andy.paine@outlook.com",
-  "id" : "f0260ba52d64a2f4923d210afc149e7c3561202b",
-  "author" : "andy.paine@outlook.com",
-  "commit-time" : "2017-09-05T11:38:16+01:00",
-  "author-time" : "2017-09-05T11:30:20+01:00",
-  "msg" : "TT-1082: Update saml-test-utils dependency version",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "tunylund@gmail.com",
-  "id" : "6350ee6ca90671052f0d1f693f5e5adcd2f86efe",
-  "author" : "tunylund@gmail.com",
-  "commit-time" : "2017-08-21T16:11:07+01:00",
-  "author-time" : "2017-08-21T16:11:07+01:00",
-  "msg" : "TT-1003: Upgrade saml-utils to latest version",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "tunylund@gmail.com",
-  "id" : "7ddf42e871ab985d8b6e3485cf18d21fe121811d",
-  "author" : "tunylund@gmail.com",
-  "commit-time" : "2017-08-18T15:29:49+01:00",
-  "author-time" : "2017-08-18T15:29:49+01:00",
-  "msg" : "TT-1003: use slf4j instead of log4j",
-  "diffs" : {
-    "modify" : 4
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "tunylund@gmail.com",
-  "id" : "999815b15fa6682517a61443b964e9af9ded3269",
-  "author" : "tunylund@gmail.com",
-  "commit-time" : "2017-08-18T14:23:13+01:00",
-  "author-time" : "2017-08-18T14:23:13+01:00",
-  "msg" : "TT-1003: Upgrade saml-utils to avoid dependency clashes",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "tunylund@gmail.com",
-  "id" : "6fd7658325f615f009084b9a8b16817072306683",
-  "author" : "tunylund@gmail.com",
-  "commit-time" : "2017-08-18T13:42:40+01:00",
-  "author-time" : "2017-08-18T13:42:40+01:00",
-  "msg" : "TT-1003: Upgrade saml-security in order to fix a security issue",
-  "diffs" : {
-    "modify" : 2
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "noreply@github.com",
-  "id" : "e94a3dd923e355c0b0bd79f739c73ac80c3c9386",
-  "author" : "willp-bl@users.noreply.github.com",
-  "commit-time" : "2017-08-11T09:27:42+01:00",
-  "author-time" : "2017-08-11T09:27:42+01:00",
-  "msg" : "Merge pull request #1 from alphagov/eid-208-make-eidas-entity-id-optional",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "id" : "53837aa5f5b87a0c159734af3d84a2121f76a26e",
-  "author" : "aditya.pahuja@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-08-09T16:29:10+01:00",
-  "author-time" : "2017-08-09T16:29:10+01:00",
-  "msg" : "EID-208: Update to use latest version of dropwizard saml",
-  "diffs" : {
-    "modify" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "826e84c69e94c3db92cf0b66625500b1c627839f",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-07-20T11:40:40+01:00",
-  "author-time" : "2017-07-20T11:40:40+01:00",
-  "msg" : "TT-835: Remove TestEntityIds",
-  "diffs" : {
-    "modify" : 2,
-    "delete" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "4a4645856df5130f65c782e6cc034fc31a7b701d",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-07-11T17:44:21+01:00",
-  "author-time" : "2017-07-11T17:44:21+01:00",
-  "msg" : "TT-733: Add gradle-wrapper.jar",
-  "diffs" : {
-    "add" : 1
-  },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
-  } ]
-}, {
-  "committer" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "id" : "76d84b0ef73b51e45e850f4cbf9bf28431e98509",
-  "author" : "anshul.sirur@digital.cabinet-office.gov.uk",
-  "commit-time" : "2017-07-11T16:41:48+01:00",
-  "author-time" : "2017-07-11T16:41:48+01:00",
-  "msg" : "Initial commit",
-  "diffs" : { },
-  "tags" : [ {
-    "tags" : [ "build_15535" ],
-    "timestamp" : "2018-04-20T17:14:05+01:00",
-    "id" : "4f958e92e370130f5b2f555ddd4dca7e51bd79c2"
-  }, {
-    "tags" : [ "build_15536" ],
-    "timestamp" : "2018-04-23T11:46:23+01:00",
-    "id" : "b4c2bb3bf3b561c36d7ae67fcc3134365b8513ed"
-  }, {
-    "tags" : [ "build_15537" ],
-    "timestamp" : "2018-04-23T12:07:36+01:00",
-    "id" : "43fab7a8709f0062a1841fe11bf5a4c88d07e62d"
-  }, {
-    "tags" : [ "build_15538", "release_708" ],
-    "timestamp" : "2018-04-23T12:45:19+01:00",
-    "id" : "a8ad69353bcee66ef72078fac2c7eae5fb004970"
   } ]
 } ]
