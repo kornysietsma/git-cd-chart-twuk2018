@@ -19,6 +19,7 @@ const chartConfig = {
     selectedCommit: null,
     selectedCommitEl: null,
     selectedProject: 'verifyFrontend',
+    radiusScale: 1,
 };
 
 function initialiseProjects(allProjectData, config) {
@@ -31,6 +32,13 @@ function initialiseProjects(allProjectData, config) {
             projectEl.insertAdjacentHTML('beforeEnd',
                 `<option value="${project}"${selectedText}>${data.title}</option>`);
         });
+}
+
+function radiusScaleLabelText(config) {
+    // radius = Math.sqrt(size) / config.radiusScale;
+    // so 10px is:
+    const sampleRadius = (10 * config.radiusScale) * (10 * config.radiusScale);
+    return `10px radius = ${sampleRadius} files changed`;
 }
 
 function initialiseChartElements(rootSelector, config) {
@@ -54,9 +62,15 @@ function initialiseChartElements(rootSelector, config) {
     const latestDateText = moment.unix(config.chartEndDate).format('YYYY-MM-DD');
     const toDateHtml = `<fieldset class="date-picker"><span>To date:</span><input id="toDate" type="date" value="${latestDateText}">`;
 
+    const radiusFilterHtml = '<fieldset>' +
+      `<p id="radiusScaleLabel">${radiusScaleLabelText(config)}</p>` +
+      `<input id="radiusScale" type="range" min="1" max="10" value="${config.radiusScale}">` +
+    '</fieldset>';
+
     const controlsEl = document.getElementById('controls');
     controlsEl.insertAdjacentHTML('beforeend', fromDateHtml);
     controlsEl.insertAdjacentHTML('beforeend', toDateHtml);
+    controlsEl.insertAdjacentHTML('beforeend', radiusFilterHtml);
     const inspectorEl = document.getElementById('inspector');
     inspectorEl.innerHTML = '<p>Select a commit for more details</p>';
 
@@ -68,6 +82,8 @@ function initialiseChartElements(rootSelector, config) {
         fromDateEl: document.getElementById('fromDate'),
         toDateEl: document.getElementById('toDate'),
         inspectorEl,
+        radiusScaleEl: document.getElementById('radiusScale'),
+        radiusScaleLabelEl: document.getElementById('radiusScaleLabel'),
     };
 }
 
@@ -97,6 +113,12 @@ function initialiseGlobalEvents(config, chartElements, onChangeFn) {
     chartElements.projectEl.addEventListener('change', () => {
         const newProject = chartElements.projectEl.value;
         config.selectedProject = newProject; // could also set dates??
+        onChangeFn();
+    });
+
+    chartElements.radiusScaleEl.addEventListener('input', () => {
+        config.radiusScale = chartElements.radiusScaleEl.value;
+        chartElements.radiusScaleLabelEl.innerHTML = radiusScaleLabelText(config);
         onChangeFn();
     });
 }
@@ -141,16 +163,16 @@ function releaseInfoFromTags(releaseTagMatcher, data) {
     return { releaseDate: null, releaseTag: null };
 }
 
-function commitDateInSeconds(commitData) {
-    return moment(commitData.get('commit-time'), moment.ISO_8601).unix();
+function authorTimeInSecs(commitData) {
+    return moment(commitData.get('author-time'), moment.ISO_8601).unix();
 }
 
 function releaseDelay(releaseTagMatcher) {
     return (data) => {
         const { releaseDate } = releaseInfoFromTags(releaseTagMatcher, data);
         if (releaseDate) {
-            const commitDate = data.get('date') || commitDateInSeconds(data);
-            return releaseDate - commitDate;
+            const authoredAt = data.get('date') || authorTimeInSecs(data);
+            return releaseDate - authoredAt;
         }
         return null;
     };
@@ -160,8 +182,9 @@ function postProcessData(data, config) {
     // avoid doing too much here - this is effectively a cache, might not be needed.
     const sortedCommits = Immutable.fromJS(data)
         .map(d => d.merge({
-            date: commitDateInSeconds(d),
+            date: authorTimeInSecs(d),
             releaseDelay: releaseDelay(config.releaseTagMatcher)(d),
+            filesChanged: d.has('diffs') ? d.get('diffs').valueSeq().reduce((m, v) => m + v) : undefined,
         }))
         .sortBy(d => d.get('date'));
     const authorData = calculateAuthorData(sortedCommits);
@@ -172,18 +195,21 @@ function postProcessData(data, config) {
     return { sortedCommits, authorData, globalEarliestDate, globalLatestDate };
 }
 
-function sizeToRadius(data) {
-    const size = data.get('diffs').valueSeq().reduce((m, v) => m + v);
-    if (size === undefined) {
-        return 0;
-    }
-    if (size <= 4) {
-        return 2;
-    }
-    if (size >= 100) {
-        return 10; // TODO: can we highlight where massive commits would make our chart unreadable?
-    }
-    return Math.sqrt(size);
+function sizeToRadius(config) {
+    return (data) => {
+        const size = data.get('filesChanged');
+        if (size === undefined || size <= 1) {
+            return 0;
+        }
+        const sizeScaled = Math.sqrt(size) / config.radiusScale;
+        if (sizeScaled <= 2) {
+            return 2;
+        }
+        if (sizeScaled >= 200) {
+            return 200;
+        }
+        return sizeScaled;
+    };
 }
 
 function calculateDurationTicks(config, splitDuration, maxDuration) {
@@ -242,6 +268,20 @@ function sanitise(str) {
     return str.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+const DIFF_LABELS = {
+    add: 'added',
+    delete: 'deleted',
+    modify: 'modified',
+    rename: 'renamed',
+    copy: 'copied',
+}
+
+function diffsAsHtml(diffs) {
+    const diffEntries = diffs.entrySeq().sort(([_kind, val]) => -val);
+    const diffHtml = diffEntries.map(([kind, val]) => `${val} files ${DIFF_LABELS[kind]}`).join('<br/>');
+    return diffHtml;
+}
+
 function commitAsHtml(config, commit) {
     const msg = commit.get('msg');
     const author = commit.get('author');
@@ -261,11 +301,14 @@ function commitAsHtml(config, commit) {
         ? '(never released)'
         : `Released: ${releaseTag} at ${moment.unix(releaseDate).format()}<br/>Release delay of roughly ${releaseDelayDuration.humanize()}`;
 
+    const diffs = commit.has('diffs') ? diffsAsHtml(commit.get('diffs')) : '';
+
     return `<p>${commitHtml}<br/>` +
         `${sanitise(msg)}<br/>` +
         `Author: ${author} at ${authorTime}<br/>` +
         `Committer: ${committer} at ${commitTime}<br/>` +
         `${releaseInfo}</p>` +
+        `${diffs}` +
         `<ul>${tagHtmlInner}</ul>`;
 }
 
@@ -354,16 +397,16 @@ function updateChart(config, elements, data) {
     };
 
     commits.merge(newCommits)
-        .attr('cx', j => xScale(moment.unix(j.get('date')).toDate()))
-        .attr('cy', j => yScale(releaseDelay(config.releaseTagMatcher)(j)))
-        .attr('r', sizeToRadius)
-        .attr('fill', j => {
-            const ad = authorData.get(j.get('author'));
+        .attr('cx', c => xScale(moment.unix(c.get('date')).toDate()))
+        .attr('cy', c => yScale(releaseDelay(config.releaseTagMatcher)(c)))
+        .attr('r', sizeToRadius(config))
+        .attr('fill', (c) => {
+            const ad = authorData.get(c.get('author'));
             return ad.get('colour');
         })
         .on('click', selectCommitCallback)
         .append('svg:title')
-        .text(n => n.get('msg'));
+        .text(c => c.get('msg'));
 
     commits
         .exit()

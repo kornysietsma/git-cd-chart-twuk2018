@@ -51,7 +51,8 @@ body {
   fill: #fff;
 }
 
-fieldset.date-picker {
+
+#controls fieldset {
     font-size: 0.8em;
 }
 
