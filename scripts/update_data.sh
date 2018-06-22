@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-declare -a projects=("spring" "verifyFrontend" "verifyHub" "kubernetes" "vscode")
+declare -a projects=("spring" "verifyFrontend" "verifyHub" "kubernetes" "vscode" "linux")
 
 (
   echo -n "export const springRawLog = "
@@ -47,6 +47,15 @@ declare -a projects=("spring" "verifyFrontend" "verifyHub" "kubernetes" "vscode"
   echo 'export const vscodeCommitPrefix = "https://github.com/Microsoft/vscode/commit/";'
 ) > docs/js/data/vscode_log.js
 
+(
+  echo -n "export const linuxRawLog = "
+  cat raw_samples/linux.json
+  echo ";"
+  echo "export const linuxTitle = \"linux\";"
+  echo 'export const linuxReleaseTagMatcher = /v\d+\.\d+.*/;'
+  echo 'export const linuxCommitPrefix = "https://github.com/torvalds/linux/commit/";'
+) > docs/js/data/linux_log.js
+
 echo "// auto-generated from scripts/update_data.sh script" > docs/js/data/all.js
 
 for project in "${projects[@]}"; do
@@ -58,5 +67,3 @@ for project in "${projects[@]}"; do
   echo "    ${project}: { title:${project}Title, releaseTagMatcher:${project}ReleaseTagMatcher, commitPrefix:${project}CommitPrefix, rawLog:${project}RawLog }," >> docs/js/data/all.js
 done
 echo "};" >> docs/js/data/all.js
-
-
