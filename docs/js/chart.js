@@ -312,15 +312,25 @@ function commitAsHtml(config, commit) {
         `<ul>${tagHtmlInner}</ul>`;
 }
 
+function circleStrokeBasedOnSplitFn(releaseDelayFn, splitDuration) {
+    return (commit) => {
+        const delay = releaseDelayFn(commit);
+        if (delay >= splitDuration) {
+            return '#ff0000';
+        }
+        return '#000000';
+    };
+}
+
 function unSelectCommit(el, inspectorEl) {
     if (el) {
-        d3.select(el).style('stroke', '#fff400').style('stroke-width', '0');
+        d3.select(el).style('stroke', '#000000');
     }
     inspectorEl.innerHTML = '<p>Nothing selected</p>';
 }
 
 function selectCommit(el, inspectorEl, commit, config) {
-    d3.select(el).style('stroke', '#fff400').style('stroke-width', '2');
+    d3.select(el).style('stroke', '#fff400');
     inspectorEl.innerHTML = commitAsHtml(config, commit);
 }
 
@@ -404,6 +414,8 @@ function updateChart(config, elements, data) {
             const ad = authorData.get(c.get('author'));
             return ad.get('colour');
         })
+        .attr('stroke-width', '2px')
+        .attr('stroke', circleStrokeBasedOnSplitFn(releaseDelay(config.releaseTagMatcher), splitDuration))
         .on('click', selectCommitCallback)
         .append('svg:title')
         .text(c => c.get('msg'));
